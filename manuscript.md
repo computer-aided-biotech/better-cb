@@ -4,7 +4,7 @@ author-meta:
 - Jane Roe
 bibliography:
 - content/manual-references.json
-date-meta: '2020-07-10'
+date-meta: '2020-07-12'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -23,9 +23,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Manuscript Title" />
 
-  <meta name="dc.date" content="2020-07-10" />
+  <meta name="dc.date" content="2020-07-12" />
 
-  <meta name="citation_publication_date" content="2020-07-10" />
+  <meta name="citation_publication_date" content="2020-07-12" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://computer-aided-biotech.github.io/better-cb/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://computer-aided-biotech.github.io/better-cb/v/ce827c7789163dca33dfa3bd2df7aa828e57485d/" />
+  <link rel="alternate" type="text/html" href="https://computer-aided-biotech.github.io/better-cb/v/a425cccb6c3722ab0f810dafd72dd528aa3ddcf9/" />
 
-  <meta name="manubot_html_url_versioned" content="https://computer-aided-biotech.github.io/better-cb/v/ce827c7789163dca33dfa3bd2df7aa828e57485d/" />
+  <meta name="manubot_html_url_versioned" content="https://computer-aided-biotech.github.io/better-cb/v/a425cccb6c3722ab0f810dafd72dd528aa3ddcf9/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://computer-aided-biotech.github.io/better-cb/v/ce827c7789163dca33dfa3bd2df7aa828e57485d/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://computer-aided-biotech.github.io/better-cb/v/a425cccb6c3722ab0f810dafd72dd528aa3ddcf9/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,10 +103,10 @@ title: Manuscript Title
 
 <small><em>
 This manuscript
-([permalink](https://computer-aided-biotech.github.io/better-cb/v/ce827c7789163dca33dfa3bd2df7aa828e57485d/))
+([permalink](https://computer-aided-biotech.github.io/better-cb/v/a425cccb6c3722ab0f810dafd72dd528aa3ddcf9/))
 was automatically generated
-from [computer-aided-biotech/better-cb@ce827c7](https://github.com/computer-aided-biotech/better-cb/tree/ce827c7789163dca33dfa3bd2df7aa828e57485d)
-on July 10, 2020.
+from [computer-aided-biotech/better-cb@a425ccc](https://github.com/computer-aided-biotech/better-cb/tree/a425cccb6c3722ab0f810dafd72dd528aa3ddcf9)
+on July 12, 2020.
 </em></small>
 
 ## Authors
