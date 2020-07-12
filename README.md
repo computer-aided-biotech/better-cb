@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/computer-aided-biotech/better-cb/tree/gh-pages) branch hosts the contents of this directory at <https://computer-aided-biotech.github.io/better-cb/>.
-The permalink for this webpage version is <https://computer-aided-biotech.github.io/better-cb/v/ce827c7789163dca33dfa3bd2df7aa828e57485d/>.
+The permalink for this webpage version is <https://computer-aided-biotech.github.io/better-cb/v/a425cccb6c3722ab0f810dafd72dd528aa3ddcf9/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://computer-aided-biotech.github.io/better-cb/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`ce827c7789163dca33dfa3bd2df7aa828e57485d`](https://github.com/computer-aided-biotech/better-cb/commit/ce827c7789163dca33dfa3bd2df7aa828e57485d).
+[`a425cccb6c3722ab0f810dafd72dd528aa3ddcf9`](https://github.com/computer-aided-biotech/better-cb/commit/a425cccb6c3722ab0f810dafd72dd528aa3ddcf9).
