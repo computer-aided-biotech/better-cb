@@ -1,33 +1,19 @@
-# Automated scholarly manuscripts on GitHub
+# better-cb: Best practices in computational biology
 
 <!-- usage note: edit the H1 title above to personalize the manuscript -->
 
 [![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://computer-aided-biotech.github.io/better-cb/)
 [![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://computer-aided-biotech.github.io/better-cb/manuscript.pdf)
 [![GitHub Actions Status](https://github.com/computer-aided-biotech/better-cb/workflows/Manubot/badge.svg)](https://github.com/computer-aided-biotech/better-cb/actions)
-[![Travis Build Status](https://travis-ci.com/computer-aided-biotech/better-cb.svg?branch=master)](https://travis-ci.com/computer-aided-biotech/better-cb)
 <!-- usage note: delete CI badges above for services not used by your manuscript -->
 
 ## Manuscript description
 
 <!-- usage note: edit this section. -->
 
-This repository is a template manuscript (a.k.a. rootstock).
-Actual manuscript instances will clone this repository (see [`SETUP.md`](SETUP.md)) and replace this paragraph with a description of their manuscript.
+This will soon be more descriptive.
 
-## Manubot
-
-<!-- usage note: do not edit this section -->
-
-Manubot is a system for writing scholarly manuscripts via GitHub.
-Manubot automates citations and references, versions manuscripts using git, and enables collaborative writing via GitHub.
-An [overview manuscript](https://greenelab.github.io/meta-review/ "Open collaborative writing with Manubot") presents the benefits of collaborative writing with Manubot and its unique features.
-The [rootstock repository](https://git.io/fhQH1) is a general purpose template for creating new Manubot instances, as detailed in [`SETUP.md`](SETUP.md).
-See [`USAGE.md`](USAGE.md) for documentation how to write a manuscript.
-
-Please open [an issue](https://git.io/fhQHM) for questions related to Manubot usage, bug reports, or general inquiries.
-
-### Repository directories & files
+## Repository directories & files
 
 The directories are as follows:
 
@@ -38,6 +24,18 @@ The directories are as follows:
 + [`webpage`](webpage) is a directory meant to be rendered as a static webpage for viewing the HTML manuscript.
 + [`build`](build) contains commands and tools for building the manuscript.
 + [`ci`](ci) contains files necessary for deployment via continuous integration.
+
+## About Manubot
+
+<!-- usage note: do not edit this section -->
+
+Manubot is a system for writing scholarly manuscripts via GitHub.
+Manubot automates citations and references, versions manuscripts using git, and enables collaborative writing via GitHub.
+An [overview manuscript](https://greenelab.github.io/meta-review/ "Open collaborative writing with Manubot") presents the benefits of collaborative writing with Manubot and its unique features.
+The [rootstock repository](https://git.io/fhQH1) is a general purpose template for creating new Manubot instances, as detailed in [`SETUP.md`](SETUP.md).
+See [`USAGE.md`](USAGE.md) for documentation how to write a manuscript.
+
+Please open [an issue](https://git.io/fhQHM) for questions related to Manubot usage, bug reports, or general inquiries.
 
 ### Local execution
 
