@@ -1,17 +1,10 @@
 # better-cb: Best practices in computational biology
 
-<!-- usage note: edit the H1 title above to personalize the manuscript -->
-
 [![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://computer-aided-biotech.github.io/better-cb/)
 [![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://computer-aided-biotech.github.io/better-cb/manuscript.pdf)
 [![GitHub Actions Status](https://github.com/computer-aided-biotech/better-cb/workflows/Manubot/badge.svg)](https://github.com/computer-aided-biotech/better-cb/actions)
-<!-- usage note: delete CI badges above for services not used by your manuscript -->
 
-## Manuscript description
-
-<!-- usage note: edit this section. -->
-
-This will soon be more descriptive.
+This paragraph will soon be more descriptive.
 
 ## Repository directories & files
 
