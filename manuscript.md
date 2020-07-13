@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://computer-aided-biotech.github.io/better-cb/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://computer-aided-biotech.github.io/better-cb/v/5443cd7696fa79e932e8efb3d583928f5c372b84/" />
+  <link rel="alternate" type="text/html" href="https://computer-aided-biotech.github.io/better-cb/v/8536a61c27901fa7f75d871959c407d2877157c1/" />
 
-  <meta name="manubot_html_url_versioned" content="https://computer-aided-biotech.github.io/better-cb/v/5443cd7696fa79e932e8efb3d583928f5c372b84/" />
+  <meta name="manubot_html_url_versioned" content="https://computer-aided-biotech.github.io/better-cb/v/8536a61c27901fa7f75d871959c407d2877157c1/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://computer-aided-biotech.github.io/better-cb/v/5443cd7696fa79e932e8efb3d583928f5c372b84/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://computer-aided-biotech.github.io/better-cb/v/8536a61c27901fa7f75d871959c407d2877157c1/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Manuscript Title
 
 <small><em>
 This manuscript
-([permalink](https://computer-aided-biotech.github.io/better-cb/v/5443cd7696fa79e932e8efb3d583928f5c372b84/))
+([permalink](https://computer-aided-biotech.github.io/better-cb/v/8536a61c27901fa7f75d871959c407d2877157c1/))
 was automatically generated
-from [computer-aided-biotech/better-cb@5443cd7](https://github.com/computer-aided-biotech/better-cb/tree/5443cd7696fa79e932e8efb3d583928f5c372b84)
+from [computer-aided-biotech/better-cb@8536a61](https://github.com/computer-aided-biotech/better-cb/tree/8536a61c27901fa7f75d871959c407d2877157c1)
 on July 13, 2020.
 </em></small>
 
