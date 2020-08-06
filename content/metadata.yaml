@@ -7,15 +7,13 @@ keywords:
 lang: en-US
 authors:
   - github: BenjaSanchez
-    name: Benjamin J. Sanchez
+    name: Benjamín J. Sánchez
     initials: BS
-    orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: johndoe
-    email: john.doe@something.com
+    orcid: 0000-0001-6093-4110
+    twitter: BenjaSanchez
+    email: bjsanchezb@gmail.com
     affiliations:
-      - Department of Something, University of Whatever
-    funders:
-      - Grant XXXXXXXX
+      - Department of Bioengineering, Technical University of Denmark, Kgs. Lyngby, 2800, Denmark
   - github: dcsoto
     name: Daniela C. Soto
     initials: DC
