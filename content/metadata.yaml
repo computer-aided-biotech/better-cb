@@ -6,21 +6,18 @@ keywords:
   - manubot
 lang: en-US
 authors:
-  - github: johndoe
-    name: John Doe
-    initials: JD
-    orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: johndoe
-    email: john.doe@something.com
+  - github: BenjaSanchez
+    name: Benjamín J. Sánchez
+    initials: BS
+    orcid: 0000-0001-6093-4110
+    twitter: BenjaSanchez
+    email: bjsanchezb@gmail.com
     affiliations:
-      - Department of Something, University of Whatever
-    funders:
-      - Grant XXXXXXXX
-  - github: janeroe
-    name: Jane Roe
-    initials: JR
-    orcid: XXXX-XXXX-XXXX-XXXX
-    email: jane.roe@whatever.edu
+      - Department of Bioengineering, Technical University of Denmark, Kgs. Lyngby, 2800, Denmark
+  - github: dcsoto
+    name: Daniela C. Soto
+    initials: DC
+    orcid: 0000-0002-6292-655X
+    email: dcsoto@ucdavis.edu
     affiliations:
-      - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
+      - Genome Center, MIND Institute, and Department of Biochemistry & Molecular Medicine, Davis, CA 95616,USA
