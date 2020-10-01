@@ -7,12 +7,12 @@
       "manubot"
     ],
     "lang": "en-US",
-    "date-meta": "2020-07-13",
+    "date-meta": "2020-10-01",
     "author-meta": [
       "John Doe",
       "Jane Roe"
     ],
-    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Manuscript Title\" />\n<meta name=\"citation_title\" content=\"Manuscript Title\" />\n<meta property=\"og:title\" content=\"Manuscript Title\" />\n<meta property=\"twitter:title\" content=\"Manuscript Title\" />\n<meta name=\"dc.date\" content=\"2020-07-13\" />\n<meta name=\"citation_publication_date\" content=\"2020-07-13\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"John Doe\" />\n<meta name=\"citation_author_institution\" content=\"Department of Something, University of Whatever\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"twitter:creator\" content=\"@johndoe\" />\n<meta name=\"citation_author\" content=\"Jane Roe\" />\n<meta name=\"citation_author_institution\" content=\"Department of Something, University of Whatever\" />\n<meta name=\"citation_author_institution\" content=\"Department of Whatever, University of Something\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<link rel=\"canonical\" href=\"https://computer-aided-biotech.github.io/better-cb/\" />\n<meta property=\"og:url\" content=\"https://computer-aided-biotech.github.io/better-cb/\" />\n<meta property=\"twitter:url\" content=\"https://computer-aided-biotech.github.io/better-cb/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://computer-aided-biotech.github.io/better-cb/\" />\n<meta name=\"citation_pdf_url\" content=\"https://computer-aided-biotech.github.io/better-cb/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://computer-aided-biotech.github.io/better-cb/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://computer-aided-biotech.github.io/better-cb/v/8536a61c27901fa7f75d871959c407d2877157c1/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://computer-aided-biotech.github.io/better-cb/v/8536a61c27901fa7f75d871959c407d2877157c1/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://computer-aided-biotech.github.io/better-cb/v/8536a61c27901fa7f75d871959c407d2877157c1/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Manuscript Title\" />\n<meta name=\"citation_title\" content=\"Manuscript Title\" />\n<meta property=\"og:title\" content=\"Manuscript Title\" />\n<meta property=\"twitter:title\" content=\"Manuscript Title\" />\n<meta name=\"dc.date\" content=\"2020-10-01\" />\n<meta name=\"citation_publication_date\" content=\"2020-10-01\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"John Doe\" />\n<meta name=\"citation_author_institution\" content=\"Department of Something, University of Whatever\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"twitter:creator\" content=\"@johndoe\" />\n<meta name=\"citation_author\" content=\"Jane Roe\" />\n<meta name=\"citation_author_institution\" content=\"Department of Something, University of Whatever\" />\n<meta name=\"citation_author_institution\" content=\"Department of Whatever, University of Something\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<link rel=\"canonical\" href=\"https://computer-aided-biotech.github.io/better-cb/\" />\n<meta property=\"og:url\" content=\"https://computer-aided-biotech.github.io/better-cb/\" />\n<meta property=\"twitter:url\" content=\"https://computer-aided-biotech.github.io/better-cb/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://computer-aided-biotech.github.io/better-cb/\" />\n<meta name=\"citation_pdf_url\" content=\"https://computer-aided-biotech.github.io/better-cb/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://computer-aided-biotech.github.io/better-cb/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://computer-aided-biotech.github.io/better-cb/v/561098cd8b0292f866a138be5850735ddb6516a6/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://computer-aided-biotech.github.io/better-cb/v/561098cd8b0292f866a138be5850735ddb6516a6/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://computer-aided-biotech.github.io/better-cb/v/561098cd8b0292f866a138be5850735ddb6516a6/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
     "bibliography": [
       "content/manual-references.json"
     ],
@@ -22,7 +22,7 @@
     "manubot-clear-requests-cache": false
   },
   "manubot": {
-    "date": "July 13, 2020",
+    "date": "October 1, 2020",
     "authors": [
       {
         "github": "johndoe",
@@ -72,15 +72,15 @@
       "repo_slug": "computer-aided-biotech/better-cb",
       "repo_owner": "computer-aided-biotech",
       "repo_name": "better-cb",
-      "commit": "8536a61c27901fa7f75d871959c407d2877157c1",
-      "triggering_commit": "8536a61c27901fa7f75d871959c407d2877157c1",
-      "build_url": "https://github.com/computer-aided-biotech/better-cb/commit/8536a61c27901fa7f75d871959c407d2877157c1/checks",
+      "commit": "561098cd8b0292f866a138be5850735ddb6516a6",
+      "triggering_commit": "561098cd8b0292f866a138be5850735ddb6516a6",
+      "build_url": "https://github.com/computer-aided-biotech/better-cb/commit/561098cd8b0292f866a138be5850735ddb6516a6/checks",
       "job_url": "https://github.com/computer-aided-biotech/better-cb/runs/run3"
     },
     "html_url": "https://computer-aided-biotech.github.io/better-cb/",
     "pdf_url": "https://computer-aided-biotech.github.io/better-cb/manuscript.pdf",
-    "html_url_versioned": "https://computer-aided-biotech.github.io/better-cb/v/8536a61c27901fa7f75d871959c407d2877157c1/",
-    "pdf_url_versioned": "https://computer-aided-biotech.github.io/better-cb/v/8536a61c27901fa7f75d871959c407d2877157c1/manuscript.pdf",
+    "html_url_versioned": "https://computer-aided-biotech.github.io/better-cb/v/561098cd8b0292f866a138be5850735ddb6516a6/",
+    "pdf_url_versioned": "https://computer-aided-biotech.github.io/better-cb/v/561098cd8b0292f866a138be5850735ddb6516a6/manuscript.pdf",
     "manubot_version": "0.3.1",
     "rootstock_commit": "ce827c7789163dca33dfa3bd2df7aa828e57485d",
     "manuscript_stats": {
