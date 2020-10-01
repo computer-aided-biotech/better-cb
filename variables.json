@@ -9,10 +9,10 @@
     "lang": "en-US",
     "date-meta": "2020-10-01",
     "author-meta": [
-      "John Doe",
-      "Jane Roe"
+      "Benjamín J. Sánchez",
+      "Daniela C. Soto"
     ],
-    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Manuscript Title\" />\n<meta name=\"citation_title\" content=\"Manuscript Title\" />\n<meta property=\"og:title\" content=\"Manuscript Title\" />\n<meta property=\"twitter:title\" content=\"Manuscript Title\" />\n<meta name=\"dc.date\" content=\"2020-10-01\" />\n<meta name=\"citation_publication_date\" content=\"2020-10-01\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"John Doe\" />\n<meta name=\"citation_author_institution\" content=\"Department of Something, University of Whatever\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"twitter:creator\" content=\"@johndoe\" />\n<meta name=\"citation_author\" content=\"Jane Roe\" />\n<meta name=\"citation_author_institution\" content=\"Department of Something, University of Whatever\" />\n<meta name=\"citation_author_institution\" content=\"Department of Whatever, University of Something\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<link rel=\"canonical\" href=\"https://computer-aided-biotech.github.io/better-cb/\" />\n<meta property=\"og:url\" content=\"https://computer-aided-biotech.github.io/better-cb/\" />\n<meta property=\"twitter:url\" content=\"https://computer-aided-biotech.github.io/better-cb/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://computer-aided-biotech.github.io/better-cb/\" />\n<meta name=\"citation_pdf_url\" content=\"https://computer-aided-biotech.github.io/better-cb/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://computer-aided-biotech.github.io/better-cb/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://computer-aided-biotech.github.io/better-cb/v/561098cd8b0292f866a138be5850735ddb6516a6/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://computer-aided-biotech.github.io/better-cb/v/561098cd8b0292f866a138be5850735ddb6516a6/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://computer-aided-biotech.github.io/better-cb/v/561098cd8b0292f866a138be5850735ddb6516a6/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Manuscript Title\" />\n<meta name=\"citation_title\" content=\"Manuscript Title\" />\n<meta property=\"og:title\" content=\"Manuscript Title\" />\n<meta property=\"twitter:title\" content=\"Manuscript Title\" />\n<meta name=\"dc.date\" content=\"2020-10-01\" />\n<meta name=\"citation_publication_date\" content=\"2020-10-01\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Benjamín J. Sánchez\" />\n<meta name=\"citation_author_institution\" content=\"Department of Bioengineering, Technical University of Denmark, Kgs. Lyngby, 2800, Denmark\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-6093-4110\" />\n<meta name=\"twitter:creator\" content=\"@BenjaSanchez\" />\n<meta name=\"citation_author\" content=\"Daniela C. Soto\" />\n<meta name=\"citation_author_institution\" content=\"Genome Center, MIND Institute, and Department of Biochemistry &amp; Molecular Medicine, Davis, CA 95616,USA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-6292-655X\" />\n<link rel=\"canonical\" href=\"https://computer-aided-biotech.github.io/better-cb/\" />\n<meta property=\"og:url\" content=\"https://computer-aided-biotech.github.io/better-cb/\" />\n<meta property=\"twitter:url\" content=\"https://computer-aided-biotech.github.io/better-cb/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://computer-aided-biotech.github.io/better-cb/\" />\n<meta name=\"citation_pdf_url\" content=\"https://computer-aided-biotech.github.io/better-cb/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://computer-aided-biotech.github.io/better-cb/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://computer-aided-biotech.github.io/better-cb/v/fd2b2fceba881d0b7c37e53c6cd1bf44bbddec9c/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://computer-aided-biotech.github.io/better-cb/v/fd2b2fceba881d0b7c37e53c6cd1bf44bbddec9c/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://computer-aided-biotech.github.io/better-cb/v/fd2b2fceba881d0b7c37e53c6cd1bf44bbddec9c/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
     "bibliography": [
       "content/manual-references.json"
     ],
@@ -25,45 +25,40 @@
     "date": "October 1, 2020",
     "authors": [
       {
-        "github": "johndoe",
-        "name": "John Doe",
-        "initials": "JD",
-        "orcid": "XXXX-XXXX-XXXX-XXXX",
-        "twitter": "johndoe",
-        "email": "john.doe@something.com",
+        "github": "BenjaSanchez",
+        "name": "Benjamín J. Sánchez",
+        "initials": "BS",
+        "orcid": "0000-0001-6093-4110",
+        "twitter": "BenjaSanchez",
+        "email": "bjsanchezb@gmail.com",
         "affiliations": [
-          "Department of Something, University of Whatever"
-        ],
-        "funders": [
-          "Grant XXXXXXXX"
+          "Department of Bioengineering, Technical University of Denmark, Kgs. Lyngby, 2800, Denmark"
         ],
         "affiliation_numbers": [
           1
         ]
       },
       {
-        "github": "janeroe",
-        "name": "Jane Roe",
-        "initials": "JR",
-        "orcid": "XXXX-XXXX-XXXX-XXXX",
-        "email": "jane.roe@whatever.edu",
+        "github": "dcsoto",
+        "name": "Daniela C. Soto",
+        "initials": "DC",
+        "orcid": "0000-0002-6292-655X",
+        "email": "dcsoto@ucdavis.edu",
         "affiliations": [
-          "Department of Something, University of Whatever",
-          "Department of Whatever, University of Something"
+          "Genome Center, MIND Institute, and Department of Biochemistry & Molecular Medicine, Davis, CA 95616,USA"
         ],
         "affiliation_numbers": [
-          1,
           2
         ]
       }
     ],
     "affiliations": [
       {
-        "affiliation": "Department of Something, University of Whatever",
+        "affiliation": "Department of Bioengineering, Technical University of Denmark, Kgs. Lyngby, 2800, Denmark",
         "affiliation_number": 1
       },
       {
-        "affiliation": "Department of Whatever, University of Something",
+        "affiliation": "Genome Center, MIND Institute, and Department of Biochemistry & Molecular Medicine, Davis, CA 95616,USA",
         "affiliation_number": 2
       }
     ],
@@ -72,15 +67,15 @@
       "repo_slug": "computer-aided-biotech/better-cb",
       "repo_owner": "computer-aided-biotech",
       "repo_name": "better-cb",
-      "commit": "561098cd8b0292f866a138be5850735ddb6516a6",
-      "triggering_commit": "561098cd8b0292f866a138be5850735ddb6516a6",
-      "build_url": "https://github.com/computer-aided-biotech/better-cb/commit/561098cd8b0292f866a138be5850735ddb6516a6/checks",
+      "commit": "fd2b2fceba881d0b7c37e53c6cd1bf44bbddec9c",
+      "triggering_commit": "fd2b2fceba881d0b7c37e53c6cd1bf44bbddec9c",
+      "build_url": "https://github.com/computer-aided-biotech/better-cb/commit/fd2b2fceba881d0b7c37e53c6cd1bf44bbddec9c/checks",
       "job_url": "https://github.com/computer-aided-biotech/better-cb/runs/run3"
     },
     "html_url": "https://computer-aided-biotech.github.io/better-cb/",
     "pdf_url": "https://computer-aided-biotech.github.io/better-cb/manuscript.pdf",
-    "html_url_versioned": "https://computer-aided-biotech.github.io/better-cb/v/561098cd8b0292f866a138be5850735ddb6516a6/",
-    "pdf_url_versioned": "https://computer-aided-biotech.github.io/better-cb/v/561098cd8b0292f866a138be5850735ddb6516a6/manuscript.pdf",
+    "html_url_versioned": "https://computer-aided-biotech.github.io/better-cb/v/fd2b2fceba881d0b7c37e53c6cd1bf44bbddec9c/",
+    "pdf_url_versioned": "https://computer-aided-biotech.github.io/better-cb/v/fd2b2fceba881d0b7c37e53c6cd1bf44bbddec9c/manuscript.pdf",
     "manubot_version": "0.3.1",
     "rootstock_commit": "ce827c7789163dca33dfa3bd2df7aa828e57485d",
     "manuscript_stats": {
