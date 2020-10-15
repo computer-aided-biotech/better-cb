@@ -1,0 +1,14 @@
+content/02.manuscript.md:4:reproducibility
+content/02.manuscript.md:6:reproducibility
+content/02.manuscript.md:17:Jupyter
+content/02.manuscript.md:19:Conda
+content/02.manuscript.md:19:env
+content/02.manuscript.md:20:Modularize
+content/02.manuscript.md:21:linter
+content/02.manuscript.md:29:CoLab
+content/02.manuscript.md:29:Jupyter
+content/02.manuscript.md:32:NextFlow
+content/02.manuscript.md:32:Snakemake
+content/02.manuscript.md:44:Bioconda
+content/02.manuscript.md:44:Conda
+content/02.manuscript.md:45:DOIs
