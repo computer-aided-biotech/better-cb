@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Benjamín J. Sánchez" />
   <meta name="author" content="Daniela C. Soto" />
-  <meta name="dcterms.date" content="2020-10-05" />
+  <meta name="dcterms.date" content="2020-10-15" />
   <meta name="keywords" content="markdown, publishing, manubot" />
   <title>Manuscript Title</title>
   <style>
@@ -29,8 +29,8 @@
   <meta name="citation_title" content="Manuscript Title" />
   <meta property="og:title" content="Manuscript Title" />
   <meta property="twitter:title" content="Manuscript Title" />
-  <meta name="dc.date" content="2020-10-05" />
-  <meta name="citation_publication_date" content="2020-10-05" />
+  <meta name="dc.date" content="2020-10-15" />
+  <meta name="citation_publication_date" content="2020-10-15" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -50,9 +50,9 @@
   <meta name="citation_fulltext_html_url" content="https://computer-aided-biotech.github.io/better-cb/" />
   <meta name="citation_pdf_url" content="https://computer-aided-biotech.github.io/better-cb/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://computer-aided-biotech.github.io/better-cb/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://computer-aided-biotech.github.io/better-cb/v/fd2b2fceba881d0b7c37e53c6cd1bf44bbddec9c/" />
-  <meta name="manubot_html_url_versioned" content="https://computer-aided-biotech.github.io/better-cb/v/fd2b2fceba881d0b7c37e53c6cd1bf44bbddec9c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://computer-aided-biotech.github.io/better-cb/v/fd2b2fceba881d0b7c37e53c6cd1bf44bbddec9c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://computer-aided-biotech.github.io/better-cb/v/7ddc33eefe3dea1b9d6e7f20c8c59f4146fb8065/" />
+  <meta name="manubot_html_url_versioned" content="https://computer-aided-biotech.github.io/better-cb/v/7ddc33eefe3dea1b9d6e7f20c8c59f4146fb8065/" />
+  <meta name="manubot_pdf_url_versioned" content="https://computer-aided-biotech.github.io/better-cb/v/7ddc33eefe3dea1b9d6e7f20c8c59f4146fb8065/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -66,10 +66,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://computer-aided-biotech.github.io/better-cb/v/fd2b2fceba881d0b7c37e53c6cd1bf44bbddec9c/">permalink</a>)
+(<a href="https://computer-aided-biotech.github.io/better-cb/v/7ddc33eefe3dea1b9d6e7f20c8c59f4146fb8065/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/computer-aided-biotech/better-cb/tree/fd2b2fceba881d0b7c37e53c6cd1bf44bbddec9c">computer-aided-biotech/better-cb@fd2b2fc</a>
-on October 5, 2020.
+from <a href="https://github.com/computer-aided-biotech/better-cb/tree/7ddc33eefe3dea1b9d6e7f20c8c59f4146fb8065">computer-aided-biotech/better-cb@7ddc33e</a>
+on October 15, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -94,12 +94,53 @@ Genome Center, MIND Institute, and Department of Biochemistry &amp; Molecular Me
 </ul>
 <h2 class="page_break_before" id="abstract">Abstract</h2>
 <p>This should be the abstract.</p>
-<h2 id="title-1">Title 1</h2>
-<p>Some text.</p>
-<h2 id="title-2">Title 2</h2>
-<p>More great stuff.</p>
-<h3 id="subtitle">Subtitle</h3>
-<p>Details</p>
+<h2 id="introduction">Introduction</h2>
+<ul>
+<li>Importance of computation in biological research and scope.</li>
+<li>Importance to reproducibility in computational biology.</li>
+<li>Mentioning previous literature and some of their major takeaways and topics not fully covered in here (what kind of languages to learn, advanced text editors/IDEs,</li>
+<li>The computational biology best-practices continuum: reproducibility at the personal level, sharing our research with others and over time.</li>
+<li>Addressing the audience: computational biologists researchers – data analysts, workflow designers, software developers, mathematical modelers, etc.</li>
+<li>Structure of this manuscript: mention Figure 1 and Figure 2.
+<ul>
+<li><strong>Figure 1:</strong> Funnel structure for better computational biology.</li>
+<li><strong>Figure 2:</strong> Types of computational biology projects per level.</li>
+</ul></li>
+</ul>
+<h2 id="level-1-individual-research">Level 1: Individual Research</h2>
+<p>Goal: How should you manage your computational biology project?</p>
+<p>Topics:
+- Literate programming: R Markdown, Jupyter Notebooks
+- Version control: Git / GitHub (commits)
+- Software versioning and environment managers (Conda, python-env)
+- Modularize, snippets
+- Coding style: variable naming, linter, pep8, commenting
+- Programming practices: paradigms (object-oriented, procedural), assertions, pair-programming</p>
+<h2 id="level-2-collaboration">Level 2: Collaboration</h2>
+<p>Goal: How to allow your collaborators to reproduce and interact with your research/software?</p>
+<p>Topics:
+- Sharing notebooks: R Markdowns and Jupyter Notebooks (Binder, Google CoLab)
+- Sharing apps: Shiny apps, Dashboard.
+- GitHub (branching, pull requests)
+- Workflow automation: Snakemake (NextFlow, Make, Bash script)
+- Sharing data and metadata</p>
+<h2 id="level-3-community">Level 3: Community</h2>
+<p>Goal: How to develop and maintain a computational biology project with community feedback over time?</p>
+<p>Topics:
+- GitHub releases and semantic versioning
+- Git Flow, GitHub Issues
+- Continuous integration and unit tests
+- Dependencies per user: pip-tools
+- Sharing software as Python packages, Conda/Bioconda or containers (Docker, Singularity)
+- Include license (MIT) and DOIs
+- Documentation: read the docs.</p>
+<p>Note: Maybe add software development methodologies (Agile, Scrum, Sprints).</p>
+<h2 id="all-three-levels-in-action">All three levels in action</h2>
+<ul>
+<li>Example of computational biology project 1: RNA-seq analysis (workflow)</li>
+<li>Example of computational biology project 2: Genome-scale metabolic model (systems biology project)</li>
+<li>Example of computational biology project 3: Software development (computational tool)</li>
+</ul>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" role="doc-bibliography">
