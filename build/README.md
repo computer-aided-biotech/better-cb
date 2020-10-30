@@ -46,6 +46,22 @@ However, it will fail on Windows due to the [`pango`](https://anaconda.org/conda
 Because the build process is dependent on having the appropriate version of the `manubot` Python package, it is necessary to use the version specified in `environment.yml`.
 The latest `manubot` release on PyPI may not be compatible with the latest version of this rootstock repository.
 
+### Building from an Ubuntu terminal in Windows
+
+Although Windows is not supported, you can build the `.html` manuscript locally by installing the [Ubuntu Terminal](https://ubuntu.com/tutorials/ubuntu-on-windows#1-overview), install [miniconda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html) from within the Ubuntu terminal, and thereafter following the instructions above (your `/c` drive is present at `/mnt`). If you encounter the following error when running `bash build/build.sh`:
+
+```bash
+build/build.sh: line 2: $'\r': command not found
+build/build.sh: line 4: $'\r': command not found
+build/build.sh: line 6: -o: command not found
+```
+
+Install `dos2unix` and then run:
+
+```bash
+dos2unix build/build.sh
+```
+
 ## Building PDFs
 
 If Docker is available, `build.sh` uses the [Athena](https://www.athenapdf.com/) [Docker image](https://hub.docker.com/r/arachnysdocker/athenapdf) to build the PDF.
