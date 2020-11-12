@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Benjamín J. Sánchez" />
   <meta name="author" content="Daniela C. Soto" />
-  <meta name="dcterms.date" content="2020-10-15" />
+  <meta name="dcterms.date" content="2020-11-12" />
   <meta name="keywords" content="markdown, publishing, manubot" />
   <title>Manuscript Title</title>
   <style>
@@ -29,8 +29,8 @@
   <meta name="citation_title" content="Manuscript Title" />
   <meta property="og:title" content="Manuscript Title" />
   <meta property="twitter:title" content="Manuscript Title" />
-  <meta name="dc.date" content="2020-10-15" />
-  <meta name="citation_publication_date" content="2020-10-15" />
+  <meta name="dc.date" content="2020-11-12" />
+  <meta name="citation_publication_date" content="2020-11-12" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -50,9 +50,9 @@
   <meta name="citation_fulltext_html_url" content="https://computer-aided-biotech.github.io/better-cb/" />
   <meta name="citation_pdf_url" content="https://computer-aided-biotech.github.io/better-cb/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://computer-aided-biotech.github.io/better-cb/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://computer-aided-biotech.github.io/better-cb/v/88520516ba8fc6c44457ca9cd570bdfe8da7e459/" />
-  <meta name="manubot_html_url_versioned" content="https://computer-aided-biotech.github.io/better-cb/v/88520516ba8fc6c44457ca9cd570bdfe8da7e459/" />
-  <meta name="manubot_pdf_url_versioned" content="https://computer-aided-biotech.github.io/better-cb/v/88520516ba8fc6c44457ca9cd570bdfe8da7e459/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://computer-aided-biotech.github.io/better-cb/v/f5ca2a3aea7fe8148ced27153c03eb8cd1fae270/" />
+  <meta name="manubot_html_url_versioned" content="https://computer-aided-biotech.github.io/better-cb/v/f5ca2a3aea7fe8148ced27153c03eb8cd1fae270/" />
+  <meta name="manubot_pdf_url_versioned" content="https://computer-aided-biotech.github.io/better-cb/v/f5ca2a3aea7fe8148ced27153c03eb8cd1fae270/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -66,10 +66,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://computer-aided-biotech.github.io/better-cb/v/88520516ba8fc6c44457ca9cd570bdfe8da7e459/">permalink</a>)
+(<a href="https://computer-aided-biotech.github.io/better-cb/v/f5ca2a3aea7fe8148ced27153c03eb8cd1fae270/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/computer-aided-biotech/better-cb/tree/88520516ba8fc6c44457ca9cd570bdfe8da7e459">computer-aided-biotech/better-cb@8852051</a>
-on October 15, 2020.
+from <a href="https://github.com/computer-aided-biotech/better-cb/tree/f5ca2a3aea7fe8148ced27153c03eb8cd1fae270">computer-aided-biotech/better-cb@f5ca2a3</a>
+on November 12, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -367,7 +367,8 @@ Genome Center, MIND Institute, and Department of Biochemistry &amp; Molecular Me
     }
 
     /* figure image element */
-    figure img {
+    figure > img,
+    figure > svg {
         max-width: 100%;
         display: block;
         margin-left: auto;
@@ -375,7 +376,8 @@ Genome Center, MIND Institute, and Department of Biochemistry &amp; Molecular Me
     }
 
     /* figure auto-number */
-    img + figcaption > span:first-of-type {
+    img + figcaption > span:first-of-type,
+    svg + figcaption > span:first-of-type {
         font-weight: bold;
         margin-right: 5px;
     }
@@ -955,7 +957,8 @@ Genome Center, MIND Institute, and Department of Biochemistry &amp; Molecular Me
         }
 
         /* tooltip copy of <img> */
-        #tooltip_content > figure > img {
+        #tooltip_content > figure > img,
+        #tooltip_content > figure > svg {
             max-height: 260px;
         }
 
@@ -1206,7 +1209,7 @@ Genome Center, MIND Institute, and Department of Biochemistry &amp; Molecular Me
 
     @media only screen {
         /* regular <img> in document when hovered */
-        .lightbox_document_img:hover {
+        img.lightbox_document_img:hover {
             cursor: pointer;
         }
 
@@ -2888,8 +2891,6 @@ Genome Center, MIND Institute, and Department of Biochemistry &amp; Molecular Me
             window.addEventListener('load', start);
     })();
 </script>
-<!-- table of contents plugin -->
-
 <script>
     (function() {
         // /////////////////////////
@@ -2912,10 +2913,13 @@ Genome Center, MIND Institute, and Department of Biochemistry &amp; Molecular Me
             // which types of elements to add links for, in
             // "document.querySelector" format
             typesQuery: 'h1, h2, h3',
-            // whether default behavior is to be closed ('false'), open
-            // ('true'), or only open when screen wide enough to fit panel
-            // ('auto'). note: still always starts closed when page loads.
-            open: 'auto',
+            // whether toc starts open. use 'true' or 'false', or 'auto' to
+            // use 'true' behavior when screen wide enough and 'false' when not
+            startOpen: 'false',
+            // whether toc closes when clicking on toc link. use 'true' or
+            // 'false', or 'auto' to use 'false' behavior when screen wide
+            // enough and 'true' when not
+            clickClose: 'auto',
             // if list item is more than this many characters, text will be
             // truncated
             charLimit: '50',
@@ -2940,13 +2944,21 @@ Genome Center, MIND Institute, and Department of Biochemistry &amp; Molecular Me
             if (!panel)
                 return;
             makeEntries(panel);
+            // attach panel to document after making entries, so 'toc' heading
+            // in panel isn't included in toc
             document.body.insertBefore(panel, document.body.firstChild);
 
-            closePanel();
+            // initial panel state
+            if (
+                options.startOpen === 'true' ||
+                (options.startOpen === 'auto' && !isSmallScreen())
+            )
+                openPanel();
+            else
+                closePanel();
 
             // attach click, scroll, and hash change listeners to window
             window.addEventListener('click', onClick);
-            window.addEventListener('touchstart', onClick);
             window.addEventListener('scroll', onScroll);
             window.addEventListener('hashchange', onScroll);
             window.addEventListener('keyup', onKeyUp);
@@ -2964,25 +2976,10 @@ Genome Center, MIND Institute, and Department of Biochemistry &amp; Molecular Me
             return window.innerWidth < 816 + 260 * 2;
         }
 
-        // open/close panel based on option and screen size
-        function openOrClosePanel() {
-            if (
-                options.open === 'true' ||
-                (options.open === 'auto' && !isSmallScreen())
-            )
-                openPanel();
-            else
-                closePanel();
-        }
-
         // when mouse is clicked anywhere in window
         function onClick() {
-            const panel = document.getElementById('toc_panel');
-            if (!panel)
-                return;
-
-            if (panel.dataset.open === 'true')
-                openOrClosePanel();
+            if (isSmallScreen())
+                closePanel();
         }
 
         // when window is scrolled or hash changed
@@ -3064,8 +3061,8 @@ Genome Center, MIND Institute, and Department of Biochemistry &amp; Molecular Me
             button.classList.add('icon_button');
 
             // create header text
-            const text = document.createElement('h3');
-            text.innerHTML = 'View Table of Contents';
+            const text = document.createElement('h4');
+            text.innerHTML = 'Table of Contents';
 
             // create container for toc list
             const list = document.createElement('div');
@@ -3142,8 +3139,14 @@ Genome Center, MIND Institute, and Department of Biochemistry &amp; Molecular Me
         }
 
         // when link is clicked
-        function onLinkClick() {
-            openOrClosePanel();
+        function onLinkClick(event) {
+            if (
+                options.clickClose === 'true' ||
+                (options.clickClose === 'auto' && isSmallScreen())
+            )
+                closePanel();
+            else
+                openPanel();
         }
 
         // open panel if closed, close if opened
@@ -3953,7 +3956,7 @@ Genome Center, MIND Institute, and Department of Biochemistry &amp; Molecular Me
             window.addEventListener('load', start);
     })();
 </script>
-<!-- math plugin configuration -->
+<!-- mathjax plugin configuration -->
 
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -3961,12 +3964,16 @@ Genome Center, MIND Institute, and Department of Biochemistry &amp; Molecular Me
         "HTML-CSS": { linebreaks: { automatic: true } },
         "SVG": { linebreaks: { automatic: true } },
         "fast-preview": { disabled: true }
-    });
+  });
 </script>
 
-<!-- math plugin -->
+<!-- mathjax plugin -->
 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML'>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"
+    integrity="sha512-0doc9hKxR3PYwso42RD1p5ySZpzzuDiOwMrdCEh2WdJZCjcmFKc/wEnL+z8fBQrnHoiNWbo+3fiGkOYXBdQp4A=="
+    crossorigin="anonymous"
+>
     // /////////////////////////
     // DESCRIPTION
     // /////////////////////////
