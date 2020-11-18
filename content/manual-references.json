@@ -18,5 +18,39 @@
       "family": "Himmelstein"
     }
   ]
+},
+{
+  "type": "webpage",
+  "standard_citation": "url:https://www.kennedykrieger.org/sites/default/files/library/documents/research/center-labs-cores/bioinformatics/bioinformatics-def.pdf",
+  "title": "NIH working definition of bioinformatics and computational biology",
+  "URL": "https://www.kennedykrieger.org/sites/default/files/library/documents/research/center-labs-cores/bioinformatics/bioinformatics-def.pdf",
+  "author": [
+			{
+				"family": "Michael",
+				"given": "Huerta"
+			},
+      {
+        "family": "Gregory",
+        "given": "Downing"
+      },
+      {
+        "family": "Florence",
+        "given": "Haseltine"
+      },
+      {
+        "family": "Belinda",
+        "given": "Seto"
+      },
+      {
+        "family": "Yuan",
+        "given": "Liu"
+      }
+		],
+  "issued": {
+       "date-parts": [[ 2000, 7, 17 ]]
+  },
+  "accessed": {
+       "date-parts": [[ 2020, 11, 15 ]]
+  }
 }
 ]
