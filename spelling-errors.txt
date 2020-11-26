@@ -2,9 +2,11 @@ Benjamín
 BenjaSanchez
 Bioconda
 Bioengineering
+bioinformatics
 CoLab
 Conda
 Daniela
+Dayhoff
 dcsoto
 DOIs
 env
@@ -14,6 +16,8 @@ linter
 Lyngby
 Modularize
 NextFlow
+praxis
 reproducibility
+roadmap
 Sánchez
 Snakemake

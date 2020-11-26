@@ -1,5 +1,12 @@
-content/02.introduction.md:4:reproducibility
-content/02.introduction.md:6:reproducibility
+content/02.introduction.md:3:bioinformatics
+content/02.introduction.md:3:Dayhoff
+content/02.introduction.md:5:bioinformatics
+content/02.introduction.md:5:bioinformatics
+content/02.introduction.md:5:bioinformatics
+content/02.introduction.md:5:praxis
+content/02.introduction.md:7:reproducibility
+content/02.introduction.md:9:Jupyter
+content/02.introduction.md:9:roadmap
 content/03.personal-research.md:6:Jupyter
 content/03.personal-research.md:8:Conda
 content/03.personal-research.md:8:env
