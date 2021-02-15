@@ -50,9 +50,9 @@
   <meta name="citation_fulltext_html_url" content="https://computer-aided-biotech.github.io/better-cb/" />
   <meta name="citation_pdf_url" content="https://computer-aided-biotech.github.io/better-cb/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://computer-aided-biotech.github.io/better-cb/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://computer-aided-biotech.github.io/better-cb/v/faf47950c1fcd09dadfa04561b82f57e6b852555/" />
-  <meta name="manubot_html_url_versioned" content="https://computer-aided-biotech.github.io/better-cb/v/faf47950c1fcd09dadfa04561b82f57e6b852555/" />
-  <meta name="manubot_pdf_url_versioned" content="https://computer-aided-biotech.github.io/better-cb/v/faf47950c1fcd09dadfa04561b82f57e6b852555/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://computer-aided-biotech.github.io/better-cb/v/c0d4c2495966f15821efc542e8a26cd57a3f2abf/" />
+  <meta name="manubot_html_url_versioned" content="https://computer-aided-biotech.github.io/better-cb/v/c0d4c2495966f15821efc542e8a26cd57a3f2abf/" />
+  <meta name="manubot_pdf_url_versioned" content="https://computer-aided-biotech.github.io/better-cb/v/c0d4c2495966f15821efc542e8a26cd57a3f2abf/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -66,9 +66,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://computer-aided-biotech.github.io/better-cb/v/faf47950c1fcd09dadfa04561b82f57e6b852555/">permalink</a>)
+(<a href="https://computer-aided-biotech.github.io/better-cb/v/c0d4c2495966f15821efc542e8a26cd57a3f2abf/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/computer-aided-biotech/better-cb/tree/faf47950c1fcd09dadfa04561b82f57e6b852555">computer-aided-biotech/better-cb@faf4795</a>
+from <a href="https://github.com/computer-aided-biotech/better-cb/tree/c0d4c2495966f15821efc542e8a26cd57a3f2abf">computer-aided-biotech/better-cb@c0d4c24</a>
 on February 15, 2021.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -328,15 +328,195 @@ Version control
 <p>Big companies have become aware of the need for collaborative writing, developing online applications that can be simultaneously edited by multiple people. Google’s GDocs and Microsoft’s Office 365 are well-known word processors designed for this purpose, where the text is displayed with the exact appearance than in a printout (know as <em>What-You-See-Is-What-You-Get</em> , or WYSIWYG) and the text can be formatted making use of the internal features of the application. The advantage of these technologies is that they are extremely user-friendly, and require no additional knowledge. They are a good option when one or more of your collaborators seeks simplicity, but they are not specifically tailored for the needs of scientific writing, such as adding references, equations and figures. Fortunately, third-party companies have developed plugins for these applications to add references to your document. Companies like Authorea have developed their own online application specifically designed for writing manuscripts. Authorea, in particular, offers templates for different type of research projects, allows you to manage collaborators from the same platform, and easily add reference from using identifiers (DOI, PubMed, etc.). Consider, nonetheless, that some collaborators may not want to adopt a new tool exclusively for writing manuscripts.</p>
 <p>In addition to word editors, text editors are a competitive option to write manuscripts when combined with a markup language—a human-readable computer language that uses tags to delineate formatting elements in a document that will be later rendered. Since the formatting process is internally handled by the application, styling elements (headers, text formatting, equations) can be easily written in text, even achieving greater consistency than word processors. Disciplines closely related to computational biology, such as statistics and mathematics, have historically used the markup language LaTeX for writing articles. This language has a specific syntax to write mathematics constructs as simple text, making it a sound choice for papers with lots of equations. To aid collaborative writing, platforms like Overleaf provide online LaTeX editors, supporting features like real-time editing. In addition to LaTeX, an emerging trend in collaborative writing is to use the lightweight markup language Markdown within the GitHub infrastructure. The software Manubot provides a set of functionalities to write scholarly articles within a GitHub repository, leveraging all the advantages of Git version control and the GitHub hosting platform <span class="citation" data-cites="YuJbg3zO">[<a href="#ref-YuJbg3zO" role="doc-biblioref">56</a>]</span>. For example, it provides cloud storage, version control, and facilitates the maintainers’ work by managing updates via pull requests. The GitHub user interface also allows off-line discussions about the manuscript using issues" and task assignment (See level 3 for tips on project management). Manubot, in particular, accepts citations using manuscripts identifiers and renders automatically renders the article in PDF and HTML formats. As a drawback, it requires technical expertise in Git and familiarity with GitHub; as an upside, its reliable infrastructure scales well to large and open collaborative projects.</p>
 <h2 id="level-3-community">Level 3: Community</h2>
-<p>Goal: How to develop and maintain a computational biology project with community feedback over time?</p>
-<p>Topics:
-- GitHub releases and semantic versioning
-- Git Flow, GitHub Issues
-- Continuous integration and unit tests
-- Dependencies per user: pip-tools
-- Sharing software as Python packages, Conda/Bioconda or containers (Docker, Singularity)
-- Include license (MIT) and DOIs
-- Documentation: read the docs.</p>
+<p>The third and final step of this journey is when you want to present your research to the community. This can already be done shortly after the start of your project, or towards the end, when you are close to publish your results. Either way, the main goal when doing it should be to develop and maintain an open and reproducible computational biology project, with community engagement over time. Here, we can distinguish 3 sub-goals: Make your research 1) accessible, 2) reproducible and 3) sustainable. The latter is especially relevant when part of the research involves developing code that will be used by others in the future (e.g. a tool or workflow), but we believe that many of those ideas are still relevant to any computational biology project as well.</p>
+<h3 id="make-your-research-accessible">3.1. Make your research accessible</h3>
+<p>Making your research accessible is the first step towards open research. This include ensuring that anyone (inside or outside of academia) can access your research, and that your research stays available long after your paper is published. It is extremely frustrating for any researcher to look for software or a set of scripts from a paper published a few years ago, only to find a “404 error” where the code used to be provided. Even more frustrating is whenever authors offer code as “available on request”; this often leads to an email from the supervisor of the project explaining that the developer of the code left years ago so the code is not available anymore.</p>
+<p>There are three main ways in which people publish accompanying code to publications: As supplementary material in the publication it was used, via privately-owned domains, or via public repositories. The first option (publishing the code as supplementary material) has low accessibility if the paper is not open access, as only members of institutions that pay the journal membership will be able to access it. Moreover, it is completely static and cannot ever be updated if a new feature wants to be introduced, or a bug is found. The second option (privately-owned domains) lacks sustainability, as it requires certain maintenance, and either the domain can expire or the website might migrate somewhere else. Therefore, here we argue for the third option (public repositories) because of its accessibility and sustainability over time, as owners can update the code (if necessary) in a git-compliant way, and they don’t need to rely on maintaining a domain and/or servers by themselves. As mentioned before (see <a href="#level-2-collaboration">Level 2: Collaboration</a>), there are several hosting services for this purpose <span class="citation" data-cites="dmEZPbB4 16Oz9VFEk 1E58VA9bS">[<a href="#ref-dmEZPbB4" role="doc-biblioref">19</a>,<a href="#ref-16Oz9VFEk" role="doc-biblioref">20</a>,<a href="#ref-1E58VA9bS" role="doc-biblioref">21</a>]</span> (Table <a href="#tbl:community-tools-1">1</a>), all equally valid depending on where people in your specific field usually publish their tools. As the authors have more experience with Github <span class="citation" data-cites="dmEZPbB4">[<a href="#ref-dmEZPbB4" role="doc-biblioref">19</a>]</span>, in the following several repository-specific tools will be exemplified with Github.</p>
+<div id="tbl:community-tools-1" class="tablenos">
+<table>
+<caption><span>Table 1:</span> Tools for making your research accessible. For each highlighted goal, different tools that achieve that goal, together with additional remarks, are shown. </caption>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 35%" />
+<col style="width: 47%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Goal</th>
+<th>Tool options</th>
+<th>Additional remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Publish your code</td>
+<td>• <strong>Github</strong> <span class="citation" data-cites="dmEZPbB4">[<a href="#ref-dmEZPbB4" role="doc-biblioref">19</a>]</span><br/>• <strong>Gitlab</strong> <span class="citation" data-cites="16Oz9VFEk">[<a href="#ref-16Oz9VFEk" role="doc-biblioref">20</a>]</span><br/>• <strong>Bitbucket</strong> <span class="citation" data-cites="1E58VA9bS">[<a href="#ref-1E58VA9bS" role="doc-biblioref">21</a>]</span></td>
+<td>All three options allow you to host your repository online for free. Choose whichever is more common in your own field.</td>
+</tr>
+<tr class="even">
+<td>Introduce your code</td>
+<td>• <strong>README file</strong> <span class="citation" data-cites="16wWVekW1">[<a href="#ref-16wWVekW1" role="doc-biblioref">57</a>]</span>: First file that shows up in a repository. <br/>• <strong>Github Pages</strong> <span class="citation" data-cites="nR2NTYy9">[<a href="#ref-nR2NTYy9" role="doc-biblioref">58</a>]</span>: Separate website.</td>
+<td>Provide a landing page to any repository with a short overview of the code (installation, usage, acknowledgments, etc).</td>
+</tr>
+<tr class="odd">
+<td>Share your code</td>
+<td>• Several licensing options <span class="citation" data-cites="Lbp8MQSL">[<a href="#ref-Lbp8MQSL" role="doc-biblioref">59</a>]</span>.</td>
+<td>Indicate with a license file what restrictions apply when using your code. If you don’t include this, you will loose many users.</td>
+</tr>
+<tr class="even">
+<td>Archive your code</td>
+<td>• <strong>Github Releases</strong> <span class="citation" data-cites="146GfpGTF">[<a href="#ref-146GfpGTF" role="doc-biblioref">60</a>]</span><br/>• <strong>Zenodo</strong> <span class="citation" data-cites="Z6ni32OG">[<a href="#ref-Z6ni32OG" role="doc-biblioref">52</a>]</span>: Provides DOI.<br/>• <strong>figshare</strong> <span class="citation" data-cites="1EMndz0j9">[<a href="#ref-1EMndz0j9" role="doc-biblioref">53</a>]</span>: Provides DOI.</td>
+<td>Share progressive stable versions of your code as you develop it. Use <strong>semantic versioning</strong> <span class="citation" data-cites="13UfgtMhu">[<a href="#ref-13UfgtMhu" role="doc-biblioref">61</a>]</span> for assigning standard identifiers to your releases.</td>
+</tr>
+<tr class="odd">
+<td>Publish a tool</td>
+<td>• <strong>PyPI</strong> <span class="citation" data-cites="Mduzvxei">[<a href="#ref-Mduzvxei" role="doc-biblioref">62</a>]</span>: Python.<br/>• <strong>CRAN</strong> <span class="citation" data-cites="rWFDdwIs">[<a href="#ref-rWFDdwIs" role="doc-biblioref">63</a>]</span>: R.<br/>• <strong>Bioconductor</strong> <span class="citation" data-cites="10CJ2sJo8">[<a href="#ref-10CJ2sJo8" role="doc-biblioref">64</a>]</span>: R.<br/>• <strong>Bioconda</strong> <span class="citation" data-cites="AvIrTFAn">[<a href="#ref-AvIrTFAn" role="doc-biblioref">65</a>]</span>: Language-agnostic.</td>
+<td>Produce a package easy to install and use. Especially useful if you think you could have a userbase that will run the same analysis as you on other datasets and/or conditions.</td>
+</tr>
+<tr class="even">
+<td>Publish an interactive web app</td>
+<td>• <strong>Dash</strong> <span class="citation" data-cites="dk80YsaO">[<a href="#ref-dk80YsaO" role="doc-biblioref">66</a>]</span>: Python.<br/>• <strong>R-Shiny</strong> <span class="citation" data-cites="B0TdOflx">[<a href="#ref-B0TdOflx" role="doc-biblioref">67</a>]</span>: R.</td>
+<td>Provide easy and interactive data exploration to your users. Especially useful if you have large datasets that can be explored in different ways.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>When publishing any piece of code online, there are two files that are fundamental to include: A readme file, and a license. Including a readme file <span class="citation" data-cites="16wWVekW1">[<a href="#ref-16wWVekW1" role="doc-biblioref">57</a>]</span> is about welcoming your users, and introducing them to your code (Table <a href="#tbl:community-tools-1">1</a>): it should include a description about its main intended use, an overview of the installation, the most common commands, a way to contact the developers if problems arise (see <a href="#make-your-research-sustainable">3.3. Make your research sustainable</a> for more details on this), and acknoledgments (if appropiate). We recommend to keep it short: You can include all the details in the documentation of the tool, here we only need a quick overview. The readme file, which can be written in different markup languages such as Markdown <span class="citation" data-cites="LSHekw4z">[<a href="#ref-LSHekw4z" role="doc-biblioref">68</a>]</span> or reStructuredText <span class="citation" data-cites="RPjXsSC8">[<a href="#ref-RPjXsSC8" role="doc-biblioref">69</a>]</span>, will render automatically on the repository’s landing page, below the repository file structure. For improved clarity, you may consider creating a separate landing page: it will declutter the look by only showing the information of the readme file, and use improved esthetics. All hosting services offer simple ways to do this; in the case of Github, you can use Github pages <span class="citation" data-cites="nR2NTYy9">[<a href="#ref-nR2NTYy9" role="doc-biblioref">58</a>]</span>.</p>
+<p>Adding a license to a repository is also a crucial step (Table <a href="#tbl:community-tools-1">1</a>). Licenses indicate how the code can be used: Is it free to use for any application? Can users modify the code as they please? Does it come with a warranty that it will work? Can it be used for profit? If a license is not provided, many researchers will choose not to use the code at all, as they won’t have an answer to these questions. For instance, academic users will not know if they are entitled to modify the code for their own research, and users from the industry will not know if the code can be used for profit. Many options exist for licensing code <span class="citation" data-cites="Lbp8MQSL">[<a href="#ref-Lbp8MQSL" role="doc-biblioref">59</a>]</span>, from permissive licenses that allow any kind of use with few or no conditions, like the Unlicense and MIT licenses, to more restrictive licenses that enforce disclosing the source and even requiring that any adaptation of the code uses the same license, like the GNU licenses. Our suggestion is to choose whatever suits your research group best; consider that as a rule of thumb, the more requirements you add, the less potential users you will have, but the more credit you will receive when users utilize your research for their own needs.</p>
+<p>Working as a computational biologist, you will probably continue lines of work from scripts or software you have already been published. For instance, perhaps you improve performance of a given function, or add a new set of features entirely. Therefore, not only you should be interested in your code being accessible as a single instance, but instead provide ways of accessing numerous versions. To keep different versions of your code organized as you develop it, it is important to create and archive succeeding releases of your code (Table <a href="#tbl:community-tools-1">1</a>). A good way to do this is with Github releases <span class="citation" data-cites="146GfpGTF">[<a href="#ref-146GfpGTF" role="doc-biblioref">60</a>]</span>, which requires minimal effort and shows all versions you have created of your code. An even better way to do this is with research repositories like Zenodo <span class="citation" data-cites="Z6ni32OG">[<a href="#ref-Z6ni32OG" role="doc-biblioref">52</a>]</span> or Figshare <span class="citation" data-cites="1EMndz0j9">[<a href="#ref-1EMndz0j9" role="doc-biblioref">53</a>]</span>, which not only store your code and data, but also give you a digital object identifier (DOI) for each version, making different versions of your code citable, in case the corresponding publication is not publicly available yet, or enough time has passed since the publication so that the current version of the code differs widely from what was published. These repositories can even be combined with code repositories, e.g. Github has a Zenodo integration that will trigger a new archived version every time a new release is made from Github. Regardless of the solution chosen, we recommend keeping some logical order to the releases, using a standard such as semantic versioning <span class="citation" data-cites="13UfgtMhu">[<a href="#ref-13UfgtMhu" role="doc-biblioref">61</a>]</span>.</p>
+<p>In most cases, it is probably enough to provide your code as an organized set of scripts and/or notebooks, for anyone to consult if they wish to reproduce and/or re-utilize your code. However, if you believe that your code would be partly or entirely used in a routine-fashion by other researchers, for instance for studying other organisms or other experimental conditions, you could consider packaging your code as a tool (Table <a href="#tbl:community-tools-1">1</a>). If you take this route, aim for using one of the main options for publishing tools as packages: Bioconda <span class="citation" data-cites="AvIrTFAn">[<a href="#ref-AvIrTFAn" role="doc-biblioref">65</a>]</span> is a catch-all solution, but language-specific options also exist, such as PyPI <span class="citation" data-cites="Mduzvxei">[<a href="#ref-Mduzvxei" role="doc-biblioref">62</a>]</span> if you work in Python, or CRAN <span class="citation" data-cites="rWFDdwIs">[<a href="#ref-rWFDdwIs" role="doc-biblioref">63</a>]</span> and Bioconductor <span class="citation" data-cites="10CJ2sJo8">[<a href="#ref-10CJ2sJo8" role="doc-biblioref">64</a>]</span> if you work in R. All of these options will allow you to reach a bigger audience, as packages can be easily searched and installed locally with minimal effort.</p>
+<p>Another common situation in research projects is, instead of having code that can be used by others to analyze their data, having data that can be analyzed in many ways. As producing plots that display the data in every conceivable way is unreasonable, a good solution here is to develop an interactive web app (Table <a href="#tbl:community-tools-1">1</a>), also referred to as a data dashboard, that lets users interact with the data, by showing different sets of variables or changing parameter settings (e.g. the significance of a statistical test). Common options for this goal are Dash <span class="citation" data-cites="dk80YsaO">[<a href="#ref-dk80YsaO" role="doc-biblioref">66</a>]</span> for Python and R Shiny <span class="citation" data-cites="B0TdOflx">[<a href="#ref-B0TdOflx" role="doc-biblioref">67</a>]</span> for R.</p>
+<h3 id="make-your-research-reproducible">3.2. Make your research reproducible</h3>
+<p>Having your code/data accessible to anyone is only the first step when sharing software to the research community; you also need for any analysis you have conducted to be reproducible by anyone. We have already discussed the importance of reproducibility in science when working in a personal project (see <a href="#level-1-personal-research">Level 1: Personal Research</a>); however, when sharing your results with the academic community this becomes even more paramount, as anyone should be able to run your code, and obtain the same results. This is especially relevant in science, as there is a constant number of people that are new to the field (including undergraduates, postgraduates and senior researchers), many who come from very different backgrounds to try to understand how your code, developed for your own specific niche research area, works.</p>
+<p>A cornerstone for reproducibility is to have a solid documentation: by explaining what your code does, users can understand the intended use of each function, which will guide them on how to achieve your same results. We can distinguish 4 different levels of documentation <span class="citation" data-cites="woYMAGdl">[<a href="#ref-woYMAGdl" role="doc-biblioref">70</a>]</span>:</p>
+<ul>
+<li><em>Tutorials:</em> A group of lessons that teach the reader how to become a user of your code.</li>
+<li><em>How-to guides:</em> A set of documents that clarify to a user how to solve common problems/tasks.</li>
+<li><em>Explanations:</em> Discussions that clarify particular topics related to your code.</li>
+<li><em>References:</em> Technical descriptions of your code’s variables/classes/functions.</li>
+</ul>
+<p>The extent of documentation you write will depend on how many users you expect to have, and conversely will affect how many users you attract. If you foresee that your code has little usability outside of your research, perhaps a solid documentation of each function using docstrings <span class="citation" data-cites="IsDZd09v">[<a href="#ref-IsDZd09v" role="doc-biblioref">71</a>]</span> could already be enough. However, you might also want to add a tutorial for a beginner, a couple of how-to guides for frequently used routines, and even some explanations for clarifying the science behind your code. The latter has the added bonus that it can be re-used for the eventual manuscript of your publication. If you are not sure how many users you might get, air on the side of caution and prepare good documentation anyways: You will be surprised to see how often other researchers contact you for reproducing your results and/or using your code for other applications! Finally, to publish comprehensive documentation online, consider using 1) a standard documentation language such as reStructuredText <span class="citation" data-cites="RPjXsSC8">[<a href="#ref-RPjXsSC8" role="doc-biblioref">69</a>]</span> or Markdown <span class="citation" data-cites="LSHekw4z">[<a href="#ref-LSHekw4z" role="doc-biblioref">68</a>]</span>, and 2) a documentation platform such as Readthedocs <span class="citation" data-cites="9HZXe8sx">[<a href="#ref-9HZXe8sx" role="doc-biblioref">72</a>]</span> or Gitbook <span class="citation" data-cites="VjDIpAqq">[<a href="#ref-VjDIpAqq" role="doc-biblioref">73</a>]</span> (Table <a href="#tbl:community-tools-2">2</a>).</p>
+<div id="tbl:community-tools-2" class="tablenos">
+<table>
+<caption><span>Table 2:</span> Tools for making your research reproducible. For each highlighted goal, different tools that achieve that goal, together with additional remarks, are shown. </caption>
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 43%" />
+<col style="width: 37%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Goal</th>
+<th>Tool options</th>
+<th>Additional remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Document your code</td>
+<td>• <strong>Readthedocs</strong> <span class="citation" data-cites="9HZXe8sx">[<a href="#ref-9HZXe8sx" role="doc-biblioref">72</a>]</span>: Uses <strong>reStructuredText</strong> <span class="citation" data-cites="RPjXsSC8">[<a href="#ref-RPjXsSC8" role="doc-biblioref">69</a>]</span>.<br/>• <strong>Gitbook</strong> <span class="citation" data-cites="VjDIpAqq">[<a href="#ref-VjDIpAqq" role="doc-biblioref">73</a>]</span>: Uses <strong>Markdown</strong> <span class="citation" data-cites="LSHekw4z">[<a href="#ref-LSHekw4z" role="doc-biblioref">68</a>]</span>.</td>
+<td>Comprehensive documentation: from tutorials and how-to guides all the way down to function documentation based on all compiled <strong>docstrings</strong> <span class="citation" data-cites="IsDZd09v">[<a href="#ref-IsDZd09v" role="doc-biblioref">71</a>]</span>.</td>
+</tr>
+<tr class="even">
+<td>Reproducible environments</td>
+<td>• <strong>Environment managers</strong>: See Table XXX.<br/>• <strong>pip-tools</strong> <span class="citation" data-cites="dvOzCOyW">[<a href="#ref-dvOzCOyW" role="doc-biblioref">74</a>]</span>: Administer several environments in a single project.</td>
+<td>As a recommendation, try having the minimum number of dependencies needed to reproduce your results.</td>
+</tr>
+<tr class="odd">
+<td>Reproducible software</td>
+<td>• <strong>Docker</strong> <span class="citation" data-cites="rmvJ2O0Q">[<a href="#ref-rmvJ2O0Q" role="doc-biblioref">75</a>]</span><br/>• <strong>Singularity</strong> <span class="citation" data-cites="99QkJBoF">[<a href="#ref-99QkJBoF" role="doc-biblioref">76</a>]</span></td>
+<td>Package your research as a container ready to run in any computer.</td>
+</tr>
+<tr class="even">
+<td>Reproducible commands</td>
+<td>• <strong>Make</strong> <span class="citation" data-cites="5iKCi5fm">[<a href="#ref-5iKCi5fm" role="doc-biblioref">77</a>]</span></td>
+<td>Build a program by following a series of steps in a single Makefile.</td>
+</tr>
+<tr class="odd">
+<td>Reproducible workflows</td>
+<td>• <strong>Make</strong> <span class="citation" data-cites="5iKCi5fm">[<a href="#ref-5iKCi5fm" role="doc-biblioref">77</a>]</span><br/>• <strong>Snakemake</strong> <span class="citation" data-cites="q2TJoDAO">[<a href="#ref-q2TJoDAO" role="doc-biblioref">78</a>]</span>: Uses a Python-based language.<br/>• <strong>Nextflow</strong> <span class="citation" data-cites="11OYUtIpR">[<a href="#ref-11OYUtIpR" role="doc-biblioref">79</a>]</span>: Uses <strong>Groovy</strong> <span class="citation" data-cites="CVNjbImf">[<a href="#ref-CVNjbImf" role="doc-biblioref">80</a>]</span>.</td>
+<td>Run a pipeline of commands on NGS data in a reproducible way.</td>
+</tr>
+<tr class="even">
+<td>Reproducible notebooks</td>
+<td>• <strong>Binder</strong> <span class="citation" data-cites="1dqfprG7">[<a href="#ref-1dqfprG7" role="doc-biblioref">35</a>]</span><br/>• <strong>Colaboratory</strong> <span class="citation" data-cites="mr26BIpF">[<a href="#ref-mr26BIpF" role="doc-biblioref">36</a>]</span></td>
+<td>Make your notebooks interactive and reproducible.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>TODO:</strong> write about environments -&gt; depends on what is written in Level 1.</p>
+<p>A tool worth using when defining each environment is pip-tools <span class="citation" data-cites="dvOzCOyW">[<a href="#ref-dvOzCOyW" role="doc-biblioref">74</a>]</span>, which allows defining several different environments for a single project, depending on who accesses the project. For instance, you might want users to use a wider number of dependencies for increased flexibility, but the CI tool to only have a minimal number of dependencies for improved efficiency.</p>
+<p>Beyond dependency trackers, you might also want to ensure your tool behaves in the same way across computing environments, even between two different operative systems (e.g. Mac and Windows). The best solution for this is to use a container (Table <a href="#tbl:community-tools-2">2</a>), which is a standardized unit of software that runs using an isolated filesystem known as a container image. This image contains not only the needed dependencies, but also any configurations, binary files, environmental variables, etc. that the software needs for running, and can be built from a text file with all the instructions. The two main tools available for creating containers for free are Docker <span class="citation" data-cites="rmvJ2O0Q">[<a href="#ref-rmvJ2O0Q" role="doc-biblioref">75</a>]</span> and Singularity <span class="citation" data-cites="99QkJBoF">[<a href="#ref-99QkJBoF" role="doc-biblioref">76</a>]</span>.</p>
+<p><strong>TODO:</strong> make, as any type of workflow -&gt; depends on what is written in Level 2.</p>
+<p>There are certain research projects where particular resources for ensuring reproducibility are especially useful: as previously mentioned (see <a href="#level-2-collaboration">Level 2: Collaboration</a>) in the case you have developed a complex workflow, for example a pipeline for analyzing NGS data, tools like Snakemake <span class="citation" data-cites="q2TJoDAO">[<a href="#ref-q2TJoDAO" role="doc-biblioref">78</a>]</span> (which uses a Python-based language) or Nextflow <span class="citation" data-cites="11OYUtIpR">[<a href="#ref-11OYUtIpR" role="doc-biblioref">79</a>]</span> (which uses <strong>Groovy</strong> <span class="citation" data-cites="CVNjbImf">[<a href="#ref-CVNjbImf" role="doc-biblioref">80</a>]</span>) will certainly be helpful. Finally, in the case that you have prepared most of your code using Jupyter notebooks, tools like Binder <span class="citation" data-cites="1dqfprG7">[<a href="#ref-1dqfprG7" role="doc-biblioref">35</a>]</span> or Colaboratory <span class="citation" data-cites="mr26BIpF">[<a href="#ref-mr26BIpF" role="doc-biblioref">36</a>]</span> allow you to publish interactive reproducible notebooks that anyone can run from their own setup.</p>
+<h3 id="make-your-research-sustainable">3.3. Make your research sustainable</h3>
+<p>Now that your research can be accessed and reproduced by anyone, the final step is to keep it like that over time. This is especially relevant if you carry the research further by integrating new features, as you need to ensure no bugs appear in the rest of the code, and at the same time offer options for your user community to request new functionalities, in order to foster a strong community over time. However, even in the case in which your research is a self-contained project that will not be continued, it is still important to ensure that your user community has ways to contact you, in case bugs would be discovered in your code or, due to packages/dependencies updating, parts of your code would not work anymore over time (a common phenomenon referred to as “software rot” <span class="citation" data-cites="8tGcpIB0">[<a href="#ref-8tGcpIB0" role="doc-biblioref">81</a>]</span>). In the following we will therefore review useful techniques for making your code/software/research sustainable over time.</p>
+<p>The first thing to consider when ensuring sustainability is to offer the users of your code a way to communicate with you (Table <a href="#tbl:community-tools-3">3</a>). You can achieve this with different tools, depending on the size of your userbase and the scope of the questions you receive. For smaller projects, where there are only questions once in a while, a single-channel solution like Gitter <span class="citation" data-cites="iXfPU3Cy">[<a href="#ref-iXfPU3Cy" role="doc-biblioref">82</a>]</span> is probably enough, as it offers a simple way for anyone in the community to ask questions, and any of the developers to answer in threads. For larger projects however, it could become unmanageable to have all discussions in the same channel, so multiple-channel solutions, i.e. forums, are better suited. Google groups <span class="citation" data-cites="6v98AMba">[<a href="#ref-6v98AMba" role="doc-biblioref">83</a>]</span> is a good example that works well for large pieces of software, as it allows for anyone to open separate threads for different issues. Recently, Github introduced Github Discussions <span class="citation" data-cites="ngGdYg2r">[<a href="#ref-ngGdYg2r" role="doc-biblioref">84</a>]</span>, also meant for keeping questions organized in different threads.</p>
+<div id="tbl:community-tools-3" class="tablenos">
+<table>
+<caption><span>Table 3:</span> Tools for making your research sustainable. For each highlighted goal, different tools that achieve that goal, together with additional remarks, are shown. </caption>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 33%" />
+<col style="width: 46%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Goal</th>
+<th>Tool options</th>
+<th>Additional remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Tell users how to contact you</td>
+<td>• Specific/shorter questions: <strong>Gitter</strong> <span class="citation" data-cites="iXfPU3Cy">[<a href="#ref-iXfPU3Cy" role="doc-biblioref">82</a>]</span>.<br/>• Larger issues / how-to’s: <strong>Google groups</strong> <span class="citation" data-cites="6v98AMba">[<a href="#ref-6v98AMba" role="doc-biblioref">83</a>]</span>, <strong>GitHub Discussions</strong> <span class="citation" data-cites="ngGdYg2r">[<a href="#ref-ngGdYg2r" role="doc-biblioref">84</a>]</span>.</td>
+<td>Provide ways for users to contact you for questions, requests, etc. Remember to visit them periodically!</td>
+</tr>
+<tr class="even">
+<td>Track to-do’s in your research</td>
+<td>• <strong>Github Issues</strong> <span class="citation" data-cites="5HELQ2ms">[<a href="#ref-5HELQ2ms" role="doc-biblioref">85</a>]</span></td>
+<td>Detail specific pending to-do’s in your research / allow others to request changes and/or highlight bugs.</td>
+</tr>
+<tr class="odd">
+<td>Encourage user contributions</td>
+<td>• <strong>Contribution guidelines</strong> <span class="citation" data-cites="ep7wwgWj">[<a href="#ref-ep7wwgWj" role="doc-biblioref">86</a>]</span>: How to open issues / contribute code.<br/>• <strong>Github Wikis</strong> <span class="citation" data-cites="pVl1NEXZ">[<a href="#ref-pVl1NEXZ" role="doc-biblioref">87</a>]</span>: More specific how-to guides.</td>
+<td>Provide as much information as you can to guide your users. You can also include administrator guidelines.</td>
+</tr>
+<tr class="even">
+<td>Foster a respectful community</td>
+<td>• Smaller projects: <strong>Contributor Covenant</strong> <span class="citation" data-cites="115FgZQh6">[<a href="#ref-115FgZQh6" role="doc-biblioref">88</a>]</span>.<br/>• Larger projects: <strong>Citizen Code of Conduct</strong> <span class="citation" data-cites="qcPNBi0h">[<a href="#ref-qcPNBi0h" role="doc-biblioref">89</a>]</span>.</td>
+<td>Essential when you would like researchers to contribute code.</td>
+</tr>
+<tr class="odd">
+<td>Branch your repo sustainably</td>
+<td>• <strong>Gitflow</strong> <span class="citation" data-cites="1Ei7XPHmQ">[<a href="#ref-1Ei7XPHmQ" role="doc-biblioref">90</a>]</span></td>
+<td>Useful when several developers contribute code to the project. Allows users to get access to stable versions of your research in an ongoing project.</td>
+</tr>
+<tr class="even">
+<td>Keep track of your issues</td>
+<td>• <strong>Kanban flowcharts</strong> <span class="citation" data-cites="zcUBK27J">[<a href="#ref-zcUBK27J" role="doc-biblioref">91</a>]</span>: <strong>Github Projects</strong> <span class="citation" data-cites="ssoXtriL">[<a href="#ref-ssoXtriL" role="doc-biblioref">92</a>]</span>, <strong>GitKraken Boards</strong> <span class="citation" data-cites="QrHcaBPj">[<a href="#ref-QrHcaBPj" role="doc-biblioref">93</a>]</span>.<br/>• <strong>Scrum practices</strong> <span class="citation" data-cites="LLiWj74b">[<a href="#ref-LLiWj74b" role="doc-biblioref">94</a>]</span>: <strong>Zenhub</strong> <span class="citation" data-cites="rX7VZWos">[<a href="#ref-rX7VZWos" role="doc-biblioref">95</a>]</span>, <strong>Jira</strong> <span class="citation" data-cites="a6SmwGuV">[<a href="#ref-a6SmwGuV" role="doc-biblioref">96</a>]</span>.</td>
+<td>Keep track of your pending tasks in different projects with <strong>Agile</strong> <span class="citation" data-cites="qOcBF2oS">[<a href="#ref-qOcBF2oS" role="doc-biblioref">97</a>]</span> software development practices. Especially useful if your research is split in many different repositories, each with multiple features/fixes to do.</td>
+</tr>
+<tr class="odd">
+<td>Automate your repo</td>
+<td>• <strong>bump2version</strong> <span class="citation" data-cites="1UVh4XJi">[<a href="#ref-1UVh4XJi" role="doc-biblioref">98</a>]</span>: Easier releasing.<br/>• <strong>Danger-CI</strong> <span class="citation" data-cites="SXI7Canc">[<a href="#ref-SXI7Canc" role="doc-biblioref">99</a>]</span>: Easier reviewing.</td>
+<td>Do less, script more!</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>TODO:</strong> Issues (GitHub issues/milestones/labels/templates): Have a to-do list -&gt; based on what is written in Level 2</p>
+<p>Now that your users know <em>where</em> to contact you, you should also tell them <em>how</em> to contact you. For this, it is essential to have a file with contribution guidelines <span class="citation" data-cites="ep7wwgWj">[<a href="#ref-ep7wwgWj" role="doc-biblioref">86</a>]</span> (Table <a href="#tbl:community-tools-3">3</a>), detailing how should users 1) open issues and 2) contribute with their own code changes, in form of pull requests. These guidelines are mainly intended for new users/contributors, so they should be written in the style of a <em>how-to</em> guide. However, they may also include additional instructions for the main developers, or even the administrator of the repository. Alternatively, those more detailed guidelines can be included in a supplemental wiki, which hosting services offer as part of the repository <span class="citation" data-cites="pVl1NEXZ">[<a href="#ref-pVl1NEXZ" role="doc-biblioref">87</a>]</span>.</p>
+<p>Equally important to the contribution guidelines file is the code of conduct file (Table <a href="#tbl:community-tools-3">3</a>), which includes guidelines on how to behave when engaging with the community in the repository, and what to do if someone does not comply with these guidelines. It is an important statement to ensure users and developers respect one another. Several templates exist as code of conduct, such as the Contributor Covenant <span class="citation" data-cites="115FgZQh6">[<a href="#ref-115FgZQh6" role="doc-biblioref">88</a>]</span> for smaller projects, and the Citizen Code of Conduct <span class="citation" data-cites="qcPNBi0h">[<a href="#ref-qcPNBi0h" role="doc-biblioref">89</a>]</span> for larger projects.</p>
+<p>Finally, ensuring sustainability of your project means not only allowing and encouraging users contacting you, but also smarter ways to develop and maintain your software as it grows in scope and number of users. This includes:</p>
+<ol type="1">
+<li><p><em>Branching System:</em> When many developers are involved in a project, you want to ensure that users can access functional versions of your code while you work on it. In this case, more advanced branching methods such as GitFlow <span class="citation" data-cites="1Ei7XPHmQ">[<a href="#ref-1Ei7XPHmQ" role="doc-biblioref">90</a>]</span> might be preferable (Table <a href="#tbl:community-tools-3">3</a>). With GitFlow, an additional development branch (often named as <code>devel</code>) is used as main branch for new branches to be based on, leaving the master branch as a separate branch only for stable versions of the code, and a merge from development to master always invoking a code release. This way, users can directly access the master branch for tested releases, whereas the latest additions of the code, perhaps not 100% tested, will be available for developers to further work on in the development branch. Additional branches can be added depending on the scope of the project, such as specific version branches in case further testing is needed, or hotfix branches, in case bugs are detected in master and a quick solution is required.</p></li>
+<li><p><em>Project Management:</em> Although issues are fundamental for keeping track of what is there to do, they can become hard to organize and prioritize as they grow in number. Several project management tools exist to solve this (Table <a href="#tbl:community-tools-3">3</a>), all based on Agile <span class="citation" data-cites="qOcBF2oS">[<a href="#ref-qOcBF2oS" role="doc-biblioref">97</a>]</span> principles. The most simple one is to have a Kanban board <span class="citation" data-cites="zcUBK27J">[<a href="#ref-zcUBK27J" role="doc-biblioref">91</a>]</span>, where issues are organized in as many columns as necessary to have a clear layout and figure out what is the current state of a given task. Tools like Github Projects <span class="citation" data-cites="ssoXtriL">[<a href="#ref-ssoXtriL" role="doc-biblioref">92</a>]</span> or GitKraken Boards <span class="citation" data-cites="QrHcaBPj">[<a href="#ref-QrHcaBPj" role="doc-biblioref">93</a>]</span> use this approach. For Larger projects with either several collaborators and/or several repositories, a more structured approach such as a Scrum framework <span class="citation" data-cites="LLiWj74b">[<a href="#ref-LLiWj74b" role="doc-biblioref">94</a>]</span> might be needed, as issues are more easily prioritized by setting milestones, estimated by assigning points, and dependencies can be defined. Both Zenhub <span class="citation" data-cites="rX7VZWos">[<a href="#ref-rX7VZWos" role="doc-biblioref">95</a>]</span> and Jira <span class="citation" data-cites="a6SmwGuV">[<a href="#ref-a6SmwGuV" role="doc-biblioref">96</a>]</span> are great options for this.</p></li>
+<li><p><em>Additional Automation:</em> As you develop your project, you will find that many aspects can be automated to improve efficiency. Want to make releasing faster to ensure all sections of your code get updated with the new release? bump2version <span class="citation" data-cites="1UVh4XJi">[<a href="#ref-1UVh4XJi" role="doc-biblioref">98</a>]</span> might help. Want to make sure contributors comply with certain standards in their pull requests? Look into Danger-CI <span class="citation" data-cites="SXI7Canc">[<a href="#ref-SXI7Canc" role="doc-biblioref">99</a>]</span>. Note here that we advice against implementing all of this from the start, but instead adding different tools as you realize you need them. If you find yourself performing a task in a routinely fashion, ask yourself if you could automate it. More often than not the answer is yes!</p></li>
+</ol>
+<p><strong>TODO:</strong> More automation options?</p>
 <h2 id="case-studies">Case studies</h2>
 <ul>
 <li>Example of computational biology project 1: RNA-seq analysis (workflow)</li>
@@ -589,6 +769,171 @@ Git Large File Storage<br />
 Daniel S. Himmelstein, Vincent Rubinetti, David R. Slochower, Dongbo Hu, Venkat S. Malladi, Casey S. Greene, Anthony Gitter<br />
 <em>PLOS Computational Biology</em> (2019-06-24) <a href="https://doi.org/c7np">https://doi.org/c7np</a> <br />
 DOI: <a href="https://doi.org/10.1371/journal.pcbi.1007128">10.1371/journal.pcbi.1007128</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31233491">31233491</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6611653">PMC6611653</a></p>
+</div>
+<div id="ref-16wWVekW1">
+<p>57. <strong>Make a README</strong> <br />
+Make a README<br />
+<a href="https://www.makeareadme.com">https://www.makeareadme.com</a></p>
+</div>
+<div id="ref-nR2NTYy9">
+<p>58. <strong>GitHub Pages</strong> <br />
+GitHub Pages<br />
+<a href="https://pages.github.com/">https://pages.github.com/</a></p>
+</div>
+<div id="ref-Lbp8MQSL">
+<p>59. <strong>Licenses</strong> <br />
+Choose a License<br />
+<a href="https://choosealicense.com/licenses/">https://choosealicense.com/licenses/</a></p>
+</div>
+<div id="ref-146GfpGTF">
+<p>60. <strong>Managing releases in a repository - GitHub Docs</strong> <a href="https://docs.github.com/en/github/administering-a-repository/managing-releases-in-a-repository">https://docs.github.com/en/github/administering-a-repository/managing-releases-in-a-repository</a></p>
+</div>
+<div id="ref-13UfgtMhu">
+<p>61. <strong>Semantic Versioning 2.0.0</strong> <br />
+Tom Preston-Werner<br />
+<em>Semantic Versioning</em> <a href="https://semver.org/">https://semver.org/</a></p>
+</div>
+<div id="ref-Mduzvxei">
+<p>62. <strong>PyPI · The Python Package Index</strong> <br />
+PyPI<br />
+<a href="https://pypi.org/">https://pypi.org/</a></p>
+</div>
+<div id="ref-rWFDdwIs">
+<p>63. <strong>The Comprehensive R Archive Network</strong> <a href="https://cran.r-project.org/">https://cran.r-project.org/</a></p>
+</div>
+<div id="ref-10CJ2sJo8">
+<p>64. <strong>Bioconductor - Home</strong> <a href="https://www.bioconductor.org/">https://www.bioconductor.org/</a></p>
+</div>
+<div id="ref-AvIrTFAn">
+<p>65. <strong>News — Bioconda documentation</strong> <a href="https://bioconda.github.io/">https://bioconda.github.io/</a></p>
+</div>
+<div id="ref-dk80YsaO">
+<p>66. <strong>Dash Overview</strong> <a href="/dash">/dash</a></p>
+</div>
+<div id="ref-B0TdOflx">
+<p>67. <strong>Shiny</strong> <a href="https://shiny.rstudio.com/">https://shiny.rstudio.com/</a></p>
+</div>
+<div id="ref-LSHekw4z">
+<p>68. <strong>Daring Fireball: Markdown Syntax Documentation</strong> <a href="https://daringfireball.net/projects/markdown/syntax">https://daringfireball.net/projects/markdown/syntax</a></p>
+</div>
+<div id="ref-RPjXsSC8">
+<p>69. <strong>reStructuredText</strong> <a href="https://docutils.sourceforge.io/rst.html">https://docutils.sourceforge.io/rst.html</a></p>
+</div>
+<div id="ref-woYMAGdl">
+<p>70. <strong>The documentation system — Documentation system documentation</strong> <a href="https://documentation.divio.com/">https://documentation.divio.com/</a></p>
+</div>
+<div id="ref-IsDZd09v">
+<p>71. <strong>Python Docstrings</strong> <br />
+GeeksforGeeks<br />
+(2017-06-01) <a href="https://www.geeksforgeeks.org/python-docstrings/">https://www.geeksforgeeks.org/python-docstrings/</a></p>
+</div>
+<div id="ref-9HZXe8sx">
+<p>72. <strong>Home | Read the Docs</strong> <a href="https://readthedocs.org/">https://readthedocs.org/</a></p>
+</div>
+<div id="ref-VjDIpAqq">
+<p>73. <strong>GitBook - Document Everything!</strong> <a href="https://gitbook.com/">https://gitbook.com/</a></p>
+</div>
+<div id="ref-dvOzCOyW">
+<p>74. <strong>jazzband/pip-tools</strong> <br />
+Jazzband<br />
+(2021-02-12) <a href="https://github.com/jazzband/pip-tools">https://github.com/jazzband/pip-tools</a></p>
+</div>
+<div id="ref-rmvJ2O0Q">
+<p>75. <strong>Empowering App Development for Developers | Docker</strong> <a href="https://www.docker.com/">https://www.docker.com/</a></p>
+</div>
+<div id="ref-99QkJBoF">
+<p>76. <strong>Home</strong> <br />
+Sylabs.io<br />
+<a href="https://sylabs.io/">https://sylabs.io/</a></p>
+</div>
+<div id="ref-5iKCi5fm">
+<p>77. <strong>gnu.org</strong> <a href="https://www.gnu.org/software/make/">https://www.gnu.org/software/make/</a></p>
+</div>
+<div id="ref-q2TJoDAO">
+<p>78. <strong>Snakemake — Snakemake 5.32.2 documentation</strong> <a href="https://snakemake.readthedocs.io/en/stable/">https://snakemake.readthedocs.io/en/stable/</a></p>
+</div>
+<div id="ref-11OYUtIpR">
+<p>79. <strong>Nextflow - A DSL for parallel and scalable computational pipelines</strong> <a href="https://www.nextflow.io/">https://www.nextflow.io/</a></p>
+</div>
+<div id="ref-CVNjbImf">
+<p>80. <strong>The Apache Groovy programming language</strong> <a href="https://groovy-lang.org/">https://groovy-lang.org/</a></p>
+</div>
+<div id="ref-8tGcpIB0">
+<p>81. <strong>What is Software Rot? - Software Development Glossary by DeepSource</strong> <br />
+DeepSource<br />
+<a href="https://deepsource.io/glossary/software-rot/">https://deepsource.io/glossary/software-rot/</a></p>
+</div>
+<div id="ref-iXfPU3Cy">
+<p>82. <strong>Gitter</strong> <a href="https://gitter.im/">https://gitter.im/</a></p>
+</div>
+<div id="ref-6v98AMba">
+<p>83. <strong>Google Groups</strong> <a href="https://groups.google.com/forum/m/">https://groups.google.com/forum/m/</a></p>
+</div>
+<div id="ref-ngGdYg2r">
+<p>84. <a href="https://docs.github.com/en/free-pro-team">https://docs.github.com/en/free-pro-team</a></p>
+</div>
+<div id="ref-5HELQ2ms">
+<p>85. <strong>Mastering Issues · GitHub Guides</strong> <a href="https://guides.github.com/features/issues/">https://guides.github.com/features/issues/</a></p>
+</div>
+<div id="ref-ep7wwgWj">
+<p>86. <strong>Setting guidelines for repository contributors - GitHub Docs</strong> <a href="https://docs.github.com/en/github/building-a-strong-community/setting-guidelines-for-repository-contributors">https://docs.github.com/en/github/building-a-strong-community/setting-guidelines-for-repository-contributors</a></p>
+</div>
+<div id="ref-pVl1NEXZ">
+<p>87. <strong>About wikis - GitHub Docs</strong> <a href="https://docs.github.com/en/github/building-a-strong-community/about-wikis">https://docs.github.com/en/github/building-a-strong-community/about-wikis</a></p>
+</div>
+<div id="ref-115FgZQh6">
+<p>88. <strong>Contributor Covenant: A Code of Conduct for Open Source Projects</strong> <a href="https://www.contributor-covenant.org/">https://www.contributor-covenant.org/</a></p>
+</div>
+<div id="ref-qcPNBi0h">
+<p>89. <strong>stumpsyn/policies</strong> <br />
+GitHub<br />
+<a href="https://github.com/stumpsyn/policies">https://github.com/stumpsyn/policies</a></p>
+</div>
+<div id="ref-1Ei7XPHmQ">
+<p>90. <strong>A successful Git branching model</strong> <br />
+nvie.com<br />
+<a href="http://nvie.com/posts/a-successful-git-branching-model/">http://nvie.com/posts/a-successful-git-branching-model/</a></p>
+</div>
+<div id="ref-zcUBK27J">
+<p>91. <strong>Kanban - A brief introduction</strong> <br />
+Atlassian<br />
+<em>Atlassian</em> <a href="https://www.atlassian.com/agile/kanban">https://www.atlassian.com/agile/kanban</a></p>
+</div>
+<div id="ref-ssoXtriL">
+<p>92. <strong>GitHub features: Integrated project management tools</strong> <br />
+GitHub<br />
+<a href="https://github.com/features/project-management">https://github.com/features/project-management</a></p>
+</div>
+<div id="ref-QrHcaBPj">
+<p>93. <strong>Free Kanban Boards - Issue Tracker | GitKraken Boards</strong> <br />
+GitKraken.com<br />
+<a href="https://www.gitkraken.com/boards">https://www.gitkraken.com/boards</a></p>
+</div>
+<div id="ref-LLiWj74b">
+<p>94. <strong>What is Scrum?</strong> <br />
+Scrum.org<br />
+<a href="https://www.scrum.org/resources/what-is-scrum">https://www.scrum.org/resources/what-is-scrum</a></p>
+</div>
+<div id="ref-rX7VZWos">
+<p>95. <strong>ZenHub - Agile Project Management for GitHub</strong> <a href="https://www.zenhub.com/">https://www.zenhub.com/</a></p>
+</div>
+<div id="ref-a6SmwGuV">
+<p>96. <strong>Jira | Issue &amp; Project Tracking Software</strong> <br />
+Atlassian<br />
+<em>Atlassian</em> <a href="https://www.atlassian.com/software/jira">https://www.atlassian.com/software/jira</a></p>
+</div>
+<div id="ref-qOcBF2oS">
+<p>97. <strong>Manifesto for Agile Software Development</strong> <a href="https://agilemanifesto.org/">https://agilemanifesto.org/</a></p>
+</div>
+<div id="ref-1UVh4XJi">
+<p>98. <strong>c4urself/bump2version</strong> <br />
+Christian Verkerk<br />
+(2021-02-13) <a href="https://github.com/c4urself/bump2version">https://github.com/c4urself/bump2version</a></p>
+</div>
+<div id="ref-SXI7Canc">
+<p>99. <strong>Danger - Stop Saying “You Forgot To…” in Code Review</strong> <br />
+Orta Therox<br />
+<a href="http://danger.systems/ruby/index.html">http://danger.systems/ruby/index.html</a></p>
 </div>
 </div>
 <!-- default theme -->
