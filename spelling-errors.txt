@@ -18,7 +18,7 @@ citable
 CLI
 cobrapy
 codebase
-Codecov
+codecov
 CoLab
 Colaboratory
 commenters
@@ -40,16 +40,16 @@ ENA
 esthetics
 eval
 facultative
-figshare
+Figshare
 filesystem
-Findable
+findable
 GDocs
 genomic
 genotyping
 Gitbook
 gitflow
 GitKraken
-GitLab
+Gitlab
 Gitter
 GUIs
 hotfix
@@ -64,7 +64,7 @@ Jupyter
 Kanban
 Kgs
 LFS
-linters
+Linters
 Lyngby
 Makefile
 Miniconda
@@ -84,7 +84,7 @@ pre
 PyCharm
 PyPI
 pytest
-README
+readme
 ReadTheDoc
 Readthedocs
 renv
@@ -101,7 +101,7 @@ ReviewNB
 roadmap
 RStudio
 Sánchez
-scRNa
+scRNA
 Similarl
 Snakefile
 Snakefiles
@@ -110,7 +110,6 @@ Snakemake’s
 Spyder
 stoichiometric
 stoichiometry
-subfield
 subfolders
 subsequents
 TensorBoard
