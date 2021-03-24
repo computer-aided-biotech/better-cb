@@ -1,13 +1,11 @@
+* abstract
+* README
+* title
 * personal:
-  * mention Matlab
   * explain what are commits
-  * automatic linters
-  * notebooks
+  * modularity
 * collab:
-  * mention the word coverage
+  * FAIR / FAIR shake
 * community:
-  * CD: deployment
-* case studies:
-  * NGS
-  * tool development
-  * GEM
+  * CD: deployment (more automation options)
+  * R bookdown
