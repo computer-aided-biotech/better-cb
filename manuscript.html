@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Benjamín J. Sánchez" />
   <meta name="author" content="Daniela C. Soto" />
-  <meta name="dcterms.date" content="2021-02-15" />
+  <meta name="dcterms.date" content="2021-03-24" />
   <meta name="keywords" content="markdown, publishing, manubot" />
   <title>Manuscript Title</title>
   <style>
@@ -29,8 +29,8 @@
   <meta name="citation_title" content="Manuscript Title" />
   <meta property="og:title" content="Manuscript Title" />
   <meta property="twitter:title" content="Manuscript Title" />
-  <meta name="dc.date" content="2021-02-15" />
-  <meta name="citation_publication_date" content="2021-02-15" />
+  <meta name="dc.date" content="2021-03-24" />
+  <meta name="citation_publication_date" content="2021-03-24" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -50,9 +50,9 @@
   <meta name="citation_fulltext_html_url" content="https://computer-aided-biotech.github.io/better-cb/" />
   <meta name="citation_pdf_url" content="https://computer-aided-biotech.github.io/better-cb/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://computer-aided-biotech.github.io/better-cb/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://computer-aided-biotech.github.io/better-cb/v/c0d4c2495966f15821efc542e8a26cd57a3f2abf/" />
-  <meta name="manubot_html_url_versioned" content="https://computer-aided-biotech.github.io/better-cb/v/c0d4c2495966f15821efc542e8a26cd57a3f2abf/" />
-  <meta name="manubot_pdf_url_versioned" content="https://computer-aided-biotech.github.io/better-cb/v/c0d4c2495966f15821efc542e8a26cd57a3f2abf/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://computer-aided-biotech.github.io/better-cb/v/4503355c72c0822c8b901b407aff02e065feef46/" />
+  <meta name="manubot_html_url_versioned" content="https://computer-aided-biotech.github.io/better-cb/v/4503355c72c0822c8b901b407aff02e065feef46/" />
+  <meta name="manubot_pdf_url_versioned" content="https://computer-aided-biotech.github.io/better-cb/v/4503355c72c0822c8b901b407aff02e065feef46/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -66,10 +66,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://computer-aided-biotech.github.io/better-cb/v/c0d4c2495966f15821efc542e8a26cd57a3f2abf/">permalink</a>)
+(<a href="https://computer-aided-biotech.github.io/better-cb/v/4503355c72c0822c8b901b407aff02e065feef46/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/computer-aided-biotech/better-cb/tree/c0d4c2495966f15821efc542e8a26cd57a3f2abf">computer-aided-biotech/better-cb@c0d4c24</a>
-on February 15, 2021.
+from <a href="https://github.com/computer-aided-biotech/better-cb/tree/4503355c72c0822c8b901b407aff02e065feef46">computer-aided-biotech/better-cb@4503355</a>
+on March 24, 2021.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -517,14 +517,24 @@ Version control
 <li><p><em>Additional Automation:</em> As you develop your project, you will find that many aspects can be automated to improve efficiency. Want to make releasing faster to ensure all sections of your code get updated with the new release? bump2version <span class="citation" data-cites="1UVh4XJi">[<a href="#ref-1UVh4XJi" role="doc-biblioref">98</a>]</span> might help. Want to make sure contributors comply with certain standards in their pull requests? Look into Danger-CI <span class="citation" data-cites="SXI7Canc">[<a href="#ref-SXI7Canc" role="doc-biblioref">99</a>]</span>. Note here that we advice against implementing all of this from the start, but instead adding different tools as you realize you need them. If you find yourself performing a task in a routinely fashion, ask yourself if you could automate it. More often than not the answer is yes!</p></li>
 </ol>
 <p><strong>TODO:</strong> More automation options?</p>
-<h2 id="case-studies">Case studies</h2>
-<ul>
-<li>Example of computational biology project 1: RNA-seq analysis (workflow)</li>
-<li>Example of computational biology project 2: Genome-scale metabolic model (systems biology project)</li>
-<li>Example of computational biology project 3: Software development (computational tool)</li>
-</ul>
-<h2 id="conclusion">Conclusion</h2>
-<p>Pending</p>
+<h2 id="case-studies">Case Studies</h2>
+<p>We will now exemplify the use of all the introduced tools by presenting three different computational biology projects from the literature, and detailing which tools are beneficial for those types of projects, depending on their scope and magnitude (two more cases are presented in <a href="#supplementary-material">Supplementary Material</a>). Note that this is a non-comprehensive list, intended as a short overview of how can projects in computational biology benefit from robust computational tools and good software development practices. Additionally, it will be quickly evident by reading these case studies that there is a lot of repetition in the chosen tools. For instance, all projects use an environment manager such as Conda, and a version control system like Git. This repetition is intentional, as it denotes that some tools, especially the ones at the personal research level regarding your project structure and good coding practices, are ubiquitous in computational biology and can benefit any project in the field.</p>
+<h3 id="case-study-1-variant-calling-in-a-large-cohort">Case study 1: Variant calling in a large cohort</h3>
+<p>Nowadays, the availability and affordability of next-generation sequencing (NGS) allows routine sequencing of dozens to even thousands of individuals. These resequencing experiments enable discovery and genotyping of genomic variation within a population to answer key questions regarding population dynamics and susceptibility to disease. For this example, let’s consider a project that performed whole-genome Illumina sequencing and called variants in thousands of individuals such as <span class="citation" data-cites="10.1101/2021.02.06.430068">[<span class="citeproc-not-found" data-reference-id="10.1101/2021.02.06.430068"><strong>???</strong></span>]</span>. In a project of this nature, the challenge resides on applying a multi-step variant calling pipeline on a big sample size in a reproducible manner.</p>
+<p>This project will require to use Bash to interact with an HPC system, given the large amount of data. Additionally, we recommend writing the pipeline using a workflow automation tool like Snakemake to reproduce the pipeline consistently and reliably across samples. Python can be used inside of the Snakefile to parse sample names and perform other data handling operations. The folder structure should follow Snakemake’s recommendations. A Conda environment can hold all necessary software since Bioconda contains a wide array of software designed for genomics analyses. The actual coding of the workflow can be done in any text editor that offers easy integration with Git commands and Git hosting repository, such as Atom or Visual Studio Code. Although there are no formal styling rules for Snakefiles, embrace consisting variable and rule naming, and comment your code when needed.</p>
+<p>A project of this magnitude will usually imply collaborators from other research groups. The pipelines and scripts can be shared using a GitHub repository. If privacy is a concern, the repository can be set as private and made public in later stages of the project. To write the manuscript, a general-purpose word processors such as Google Doc would suffice, especially if not all your collaborators are familiarized with Git and tools like Manubot. Considering that this type of data are a valuable resource for the community, follow FAIR principles for data sharing. Besides uploading the raw data in a repository like ENA or NCBI, we encourage you to openly share your code, analyses and other types of data in either a GitHub repository or a dedicated research repository like Zenodo.</p>
+<h3 id="case-study-2-scrna-seq-data-integration">Case study 2: scRNA-seq data integration</h3>
+<p>Single-cell RNA-seq (scRNA-seq) is a rapidly evolving technology that has enable the study of cell heterogeneity and developmental changes of a cell lineage, otherwise intractable with bulk RNA-seq. Current scRNa-seq experiment deliver the transcriptomic profiles of thousand to a million of cells <span class="citation" data-cites="ALU8zyix">[<a href="#ref-ALU8zyix" role="doc-biblioref">100</a>]</span>, making them a suitable target for machine or deep learning approaches. Among the many challenges imposed by this technology, a relevant one is the integration of scRNA-seq datasets, especially in case-control studies where cell types need to be functionally matched across dataset before evaluating differences across conditions. For this case study, we will consider the development of an unsupervised deep learning method for data integration as described in <span class="citation" data-cites="KBoHN8e8">[<a href="#ref-KBoHN8e8" role="doc-biblioref">101</a>]</span>.</p>
+<p>This kind of project often uses a combination of Python, R and Bash scripting depending on the task. Python can be used to write and train deep learning models with TensorFlow and PyTorch libraries, while R enables straightforward pre-processing with tools such as Seurat, and Bash can handle large scale processing of raw data files which cannot be loaded directly into RAM (often required by R and Python applications). Additionally, we advice to use the Python’s reticulate library to incorporate Python tools into the existing R ecosystem. To set up your working directory, we recommend a structure like Cookiecutter Data Science, which includes separated folders for trained models and other components of a deep learning project. To set up a software environment, Python virtual environments like pipenv and virtualenv work well with Tensorflow and PyTorch. The actual coding can be done in any general purpose text editor, such as Atom or Visual Studio Code, where updates can be easily push/pull to GitHub. As a good practice, keep the code modular and properly commented, and use detailed filenames with data stamps and model parameters to facilitate revisiting projects. Additionally, take advantage of tools such as TensorFlow’s TensorBoard to diagnose, visualize and experiment with your models.</p>
+<p>When working with collaborators, the best way to share the code is through a Git hosting service like GitHub. When multiple-users need to edit the code in real-time, then Google CoLab is an excellent platform since they offer interactive coding and GPU access. In addition to the code repository, a Manubot can be crated to write the manuscript collaboratively. To make your tool accessible to a larger community, the code can be taken from an internal repository to a public GitHub, which must include an overview of the tool and a license file. Considering that most users in the field use R, you can go step further and share your code as Bioconductor package, making sure your method can be called directly in R and that interacts with standard data-structures in the field. For better reproducibility, document your method including example tutorials in a platform like ReadTheDoc, and share the software environment needed to deploy the models as a Docker container. GitHub issues and Bioconductor forums are suitable platforms to promptly reply to users questions, bugs reports, and enhancement opportunities.</p>
+<h3 id="case-study-3-tool-development-for-constraint-based-modeling">Case study 3: Tool development for constraint-based modeling</h3>
+<p>The last case study we will present is related to constraint-based modeling, a common approach used for simulating cellular metabolism. In this approach, the complete (or partial) metabolic network of a given organism is inferred from its genome and/or literature, and converted to a matrix that contains the reaction’s stoichiometry, hence referred to as a stoichiometric matrix. Using a few simple assumptions, this matrix can then be used to perform simulations under different experimental conditions, to obtain additional insight into cellular physiology <span class="citation" data-cites="94lBUqNp">[<a href="#ref-94lBUqNp" role="doc-biblioref">102</a>]</span>. Several tools have been developed for working with these type of models; here we will consider as example cobrapy <span class="citation" data-cites="cieXgNg">[<a href="#ref-cieXgNg" role="doc-biblioref">103</a>]</span>, a community tool for reading/writing constrained-based models and performing basic simulation operations.</p>
+<p>A tool of this nature is especially useful if developed in Python, as it should ideally be presented as a package which can be easily installed with pip or similar. The use of an IDE is ideal for this case, as it will provide additional features for testing changes in the tool. Practices that for other case studies were useful now become pretty much essential, like complying with coding style and using version control. This is because there will potentially be hundreds of people that will read your code, so it needs to be easy to understand, and changes need to be clearly highlighted. Furthermore, the code should be 1) available via a hosting service such as Github, 2) tested with a continuous development tool such as Github Actions, 3) manually reviewed by collaborators to ensure correctness, 4) released following semantic versioning standards, and 5) documented with a companion documentation website, rich with tutorials and how-to guides. As a branching strategy, gitflow is probably the best suited, as it allows to have all changes in a development branch, and stable releases in a master branch.</p>
+<p>Finally, and due to the size of a project like this, additional considerations must be made for keeping a healthy user-base. The first one is to offer a place for users to raise their questions such as Gitter, Google groups or Github Discussions, and to make sure to reply to new questions often. Additionally, guidelines should be provided for everything: for how to open issues (ideally with issue templates), for how to contribute (ideally with pull request templates), for how to communicate within the community (with a code of conduct) and for any other routine task (with development guidelines and/or wikis). Adressing issues is also essential in a project of this nature, as if not done routinely they quickly pile up, and is an indicator that a project has gone stale. Additional tools such as using a Kanban flowchart with the help of Github projects will help prioritize issues, and if several repos have to be jointly coordinated, tools like Jira or Znehub could be implemeted instead.</p>
+<h2 id="final-words">Final words</h2>
+<p>Good practices in the computational biology field have gained recognition among researchers thanks to several guidelines published in recent years, and cloud-based Git repositories becoming the default platform to share code and data analyses. This review adds to the existing literature, introducing a comprehensive list of best practices that can be applied to any computational biology project, regardless of the specific subfield and the experience of the researcher. We sought to comprehensively introduce tools covering the whole computational biology “journey”, serving as a reference guide to be re-visited when needed. This approach complements other efforts that provide a deeper understanding of specifics tools that you might deem relevant to your research.</p>
+<p>Although we have introduced many tools, we are aware that other good practices were probably left behind. Moreover, as time progresses, practices will expand and change as new tools emerge and the field matures. This means that updated versions of reviews like this one will always be essential for the novice community. More importantly, the many tools and practices introduced in this study, and their ever-changing nature, may seem overwhelming, especially for someone new to the field. To overcome this, we encourage you to implement only a few practices first, starting from your personal research, and over time expand your repertoire. More importantly, keep a mindset of striving for reproducibility, regardless of the tools used.</p>
+<p>In the midst of our work, under the many pressures of scientific research, we can forget to keep good computational practices in place. In such scenario, the consequences will not be seen immediately, but the sustainability of our research will be compromised in the long run. Computational biology research heavily relies on building new knowledge from previous one; in that regard, the personal practices that we adopt will act as building blocks for the overall reproducibility of the field, and will propel computational biology research forward.</p>
 <h2 id="acknowledgments">Acknowledgments</h2>
 <p>Pending</p>
 <h2 class="page_break_before" id="references">References</h2>
@@ -600,7 +610,7 @@ DOI: <a href="https://doi.org/10.1038/d41586-020-03382-2">10.1038/d41586-020-033
 <div id="ref-7D5DgTkH">
 <p>14. <strong>Reproducible-Science-Curriculum/rr-init</strong> <br />
 Reproducible Science Curriculum<br />
-(2021-02-12) <a href="https://github.com/Reproducible-Science-Curriculum/rr-init">https://github.com/Reproducible-Science-Curriculum/rr-init</a></p>
+(2021-02-19) <a href="https://github.com/Reproducible-Science-Curriculum/rr-init">https://github.com/Reproducible-Science-Curriculum/rr-init</a></p>
 </div>
 <div id="ref-3Gx1ESE4">
 <p>15. <strong>A Quick Guide to Organizing Computational Biology Projects</strong> <br />
@@ -609,12 +619,12 @@ William Stafford Noble<br />
 DOI: <a href="https://doi.org/10.1371/journal.pcbi.1000424">10.1371/journal.pcbi.1000424</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/19649301">19649301</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2709440">PMC2709440</a></p>
 </div>
 <div id="ref-jq4WP878">
-<p>16. <strong>Distribution and Reproducibility — Snakemake 5.32.2 documentation</strong> <a href="https://snakemake.readthedocs.io/en/stable/snakefiles/deployment.html">https://snakemake.readthedocs.io/en/stable/snakefiles/deployment.html</a></p>
+<p>16. <strong>Distribution and Reproducibility — Snakemake 6.0.5 documentation</strong> <a href="https://snakemake.readthedocs.io/en/stable/snakefiles/deployment.html">https://snakemake.readthedocs.io/en/stable/snakefiles/deployment.html</a></p>
 </div>
 <div id="ref-4PJ4Kllx">
 <p>17. <strong>google/styleguide</strong> <br />
 Google<br />
-(2021-02-15) <a href="https://github.com/google/styleguide">https://github.com/google/styleguide</a></p>
+(2021-03-24) <a href="https://github.com/google/styleguide">https://github.com/google/styleguide</a></p>
 </div>
 <div id="ref-1D76el83m">
 <p>18. <strong>PEP 8 – Style Guide for Python Code</strong> <br />
@@ -627,7 +637,7 @@ GitHub<br />
 <a href="https://github.com/">https://github.com/</a></p>
 </div>
 <div id="ref-16Oz9VFEk">
-<p>20. <strong>DevOps Platform Delivered as a Single Application</strong> <br />
+<p>20. <strong>Iterate faster, innovate together</strong> <br />
 GitLab<br />
 <a href="https://about.gitlab.com/">https://about.gitlab.com/</a></p>
 </div>
@@ -648,7 +658,7 @@ Codecov<br />
 <a href="https://about.codecov.io/">https://about.codecov.io/</a></p>
 </div>
 <div id="ref-1Bi82XR9D">
-<p>25. <strong>Welcome to the tox automation project — tox 3.21.5.dev3 documentation</strong> <a href="https://tox.readthedocs.io/en/latest/">https://tox.readthedocs.io/en/latest/</a></p>
+<p>25. <strong>Welcome to the tox automation project — tox 3.23.1.dev4 documentation</strong> <a href="https://tox.readthedocs.io/en/latest/">https://tox.readthedocs.io/en/latest/</a></p>
 </div>
 <div id="ref-SM1pqdjN">
 <p>26. <strong>Travis CI - Test and Deploy with Confidence</strong> <a href="https://travis-ci.com/">https://travis-ci.com/</a></p>
@@ -728,7 +738,7 @@ GitHub CLI<br />
 <p>46. <strong>Unit Testing for R</strong> <a href="https://testthat.r-lib.org/">https://testthat.r-lib.org/</a></p>
 </div>
 <div id="ref-ZNYSO1m0">
-<p>47. <strong>Flake8: Your Tool For Style Guide Enforcement — flake8 3.8.4 documentation</strong> <a href="https://flake8.pycqa.org/en/latest/">https://flake8.pycqa.org/en/latest/</a></p>
+<p>47. <strong>Flake8: Your Tool For Style Guide Enforcement — flake8 3.9.0 documentation</strong> <a href="https://flake8.pycqa.org/en/latest/">https://flake8.pycqa.org/en/latest/</a></p>
 </div>
 <div id="ref-iFiB8Hir">
 <p>48. <strong>Safety - Security for your Python dependencies</strong> <a href="https://pyup.io/safety/">https://pyup.io/safety/</a></p>
@@ -752,9 +762,7 @@ Philipp Hauer<br />
 <p>52. <strong>Zenodo - Research. Shared.</strong> <a href="https://zenodo.org/">https://zenodo.org/</a></p>
 </div>
 <div id="ref-1EMndz0j9">
-<p>53. <strong>About</strong> <br />
-figshare<br />
-<a href="https://figshare.com/about">https://figshare.com/about</a></p>
+<p>53. <a href="https://figshare.com/about">https://figshare.com/about</a></p>
 </div>
 <div id="ref-11GtZ7icJ">
 <p>54. <strong>Git Large File Storage</strong> <br />
@@ -831,12 +839,12 @@ GeeksforGeeks<br />
 <p>72. <strong>Home | Read the Docs</strong> <a href="https://readthedocs.org/">https://readthedocs.org/</a></p>
 </div>
 <div id="ref-VjDIpAqq">
-<p>73. <strong>GitBook - Document Everything!</strong> <a href="https://gitbook.com/">https://gitbook.com/</a></p>
+<p>73. <strong>GitBook - Where software teams break knowledge silos.</strong> <a href="https://www.gitbook.com/">https://www.gitbook.com/</a></p>
 </div>
 <div id="ref-dvOzCOyW">
 <p>74. <strong>jazzband/pip-tools</strong> <br />
 Jazzband<br />
-(2021-02-12) <a href="https://github.com/jazzband/pip-tools">https://github.com/jazzband/pip-tools</a></p>
+(2021-03-24) <a href="https://github.com/jazzband/pip-tools">https://github.com/jazzband/pip-tools</a></p>
 </div>
 <div id="ref-rmvJ2O0Q">
 <p>75. <strong>Empowering App Development for Developers | Docker</strong> <a href="https://www.docker.com/">https://www.docker.com/</a></p>
@@ -847,10 +855,10 @@ Sylabs.io<br />
 <a href="https://sylabs.io/">https://sylabs.io/</a></p>
 </div>
 <div id="ref-5iKCi5fm">
-<p>77. <strong>gnu.org</strong> <a href="https://www.gnu.org/software/make/">https://www.gnu.org/software/make/</a></p>
+<p>77. <strong>Make - GNU Project - Free Software Foundation</strong> <a href="https://www.gnu.org/software/make/">https://www.gnu.org/software/make/</a></p>
 </div>
 <div id="ref-q2TJoDAO">
-<p>78. <strong>Snakemake — Snakemake 5.32.2 documentation</strong> <a href="https://snakemake.readthedocs.io/en/stable/">https://snakemake.readthedocs.io/en/stable/</a></p>
+<p>78. <strong>Snakemake — Snakemake 6.0.5 documentation</strong> <a href="https://snakemake.readthedocs.io/en/stable/">https://snakemake.readthedocs.io/en/stable/</a></p>
 </div>
 <div id="ref-11OYUtIpR">
 <p>79. <strong>Nextflow - A DSL for parallel and scalable computational pipelines</strong> <a href="https://www.nextflow.io/">https://www.nextflow.io/</a></p>
@@ -882,7 +890,7 @@ DeepSource<br />
 <p>87. <strong>About wikis - GitHub Docs</strong> <a href="https://docs.github.com/en/github/building-a-strong-community/about-wikis">https://docs.github.com/en/github/building-a-strong-community/about-wikis</a></p>
 </div>
 <div id="ref-115FgZQh6">
-<p>88. <strong>Contributor Covenant: A Code of Conduct for Open Source Projects</strong> <a href="https://www.contributor-covenant.org/">https://www.contributor-covenant.org/</a></p>
+<p>88. <strong>Contributor Covenant: A Code of Conduct for Open Source and Other Digital Commons Communities</strong> <a href="https://www.contributor-covenant.org/">https://www.contributor-covenant.org/</a></p>
 </div>
 <div id="ref-qcPNBi0h">
 <p>89. <strong>stumpsyn/policies</strong> <br />
@@ -928,14 +936,69 @@ Atlassian<br />
 <div id="ref-1UVh4XJi">
 <p>98. <strong>c4urself/bump2version</strong> <br />
 Christian Verkerk<br />
-(2021-02-13) <a href="https://github.com/c4urself/bump2version">https://github.com/c4urself/bump2version</a></p>
+(2021-03-24) <a href="https://github.com/c4urself/bump2version">https://github.com/c4urself/bump2version</a></p>
 </div>
 <div id="ref-SXI7Canc">
 <p>99. <strong>Danger - Stop Saying “You Forgot To…” in Code Review</strong> <br />
 Orta Therox<br />
 <a href="http://danger.systems/ruby/index.html">http://danger.systems/ruby/index.html</a></p>
 </div>
+<div id="ref-ALU8zyix">
+<p>100. <strong>Exponential scaling of single-cell RNA-seq in the past decade</strong> <br />
+Valentine Svensson, Roser Vento-Tormo, Sarah A Teichmann<br />
+<em>Nature Protocols</em> (2018-03-01) <a href="https://doi.org/gc5ndt">https://doi.org/gc5ndt</a> <br />
+DOI: <a href="https://doi.org/10.1038/nprot.2017.149">10.1038/nprot.2017.149</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29494575">29494575</a></p>
 </div>
+<div id="ref-KBoHN8e8">
+<p>101. <strong>scAlign: a tool for alignment, integration, and rare cell identification from scRNA-seq data</strong> <br />
+Nelson Johansen, Gerald Quon<br />
+<em>Genome Biology</em> (2019-08-14) <a href="https://doi.org/gh5jhj">https://doi.org/gh5jhj</a> <br />
+DOI: <a href="https://doi.org/10.1186/s13059-019-1766-4">10.1186/s13059-019-1766-4</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31412909">31412909</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6693154">PMC6693154</a></p>
+</div>
+<div id="ref-94lBUqNp">
+<p>102. <strong>Constraint-based models predict metabolic and associated cellular functions</strong> <br />
+Aarash Bordbar, Jonathan M. Monk, Zachary A. King, Bernhard O. Palsson<br />
+<em>Nature Reviews Genetics</em> (2014-01-16) <a href="https://doi.org/f5sk8s">https://doi.org/f5sk8s</a> <br />
+DOI: <a href="https://doi.org/10.1038/nrg3643">10.1038/nrg3643</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/24430943">24430943</a></p>
+</div>
+<div id="ref-cieXgNg">
+<p>103. <strong>COBRApy: COnstraints-Based Reconstruction and Analysis for Python</strong> <br />
+Ali Ebrahim, Joshua A Lerman, Bernhard O Palsson, Daniel R Hyduke<br />
+<em>BMC Systems Biology</em> (2013) <a href="https://doi.org/gb3qmh">https://doi.org/gb3qmh</a> <br />
+DOI: <a href="https://doi.org/10.1186/1752-0509-7-74">10.1186/1752-0509-7-74</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/23927696">23927696</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3751080">PMC3751080</a></p>
+</div>
+<div id="ref-1DX19gjFK">
+<p>104. <strong>RNA sequencing: the teenage years</strong> <br />
+Rory Stark, Marta Grzelak, James Hadfield<br />
+<em>Nature Reviews Genetics</em> (2019-07-24) <a href="https://doi.org/gf6vfx">https://doi.org/gf6vfx</a> <br />
+DOI: <a href="https://doi.org/10.1038/s41576-019-0150-2">10.1038/s41576-019-0150-2</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31341269">31341269</a></p>
+</div>
+<div id="ref-31ZBzbN6">
+<p>105. <strong>Genome-scale metabolic modelling of P. thermoglucosidasius NCIMB 11955 reveals metabolic bottlenecks in anaerobic metabolism.</strong> <br />
+Viviënne Mol, Martyn Bennett, Benjamín J. Sánchez, Beata K. Lisowska, Markus J. Herrgård, Alex Toftgaard Nielsen, David J Leak, Nikolaus Sonnenschein<br />
+<em>Cold Spring Harbor Laboratory</em> (2021-02-01) <a href="https://doi.org/gh4s89">https://doi.org/gh4s89</a> <br />
+DOI: <a href="https://doi.org/10.1101/2021.02.01.429138">10.1101/2021.02.01.429138</a></p>
+</div>
+<div id="ref-1GXDCoupc">
+<p>106. <strong>A systematic assessment of current genome-scale metabolic reconstruction tools</strong> <br />
+Sebastián N. Mendoza, Brett G. Olivier, Douwe Molenaar, Bas Teusink<br />
+<em>Genome Biology</em> (2019-08-07) <a href="https://doi.org/gh3pjm">https://doi.org/gh3pjm</a> <br />
+DOI: <a href="https://doi.org/10.1186/s13059-019-1769-1">10.1186/s13059-019-1769-1</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31391098">31391098</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6685185">PMC6685185</a></p>
+</div>
+<div id="ref-14iHcKBb7">
+<p>107. <strong>MEMOTE for standardized genome-scale metabolic model testing</strong> <br />
+Christian Lieven, Moritz E. Beber, Brett G. Olivier, Frank T. Bergmann, Meric Ataman, Parizad Babaei, Jennifer A. Bartell, Lars M. Blank, Siddharth Chauhan, Kevin Correia, … Cheng Zhang<br />
+<em>Nature Biotechnology</em> (2020-03-02) <a href="https://doi.org/gh4s88">https://doi.org/gh4s88</a> <br />
+DOI: <a href="https://doi.org/10.1038/s41587-020-0446-y">10.1038/s41587-020-0446-y</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32123384">32123384</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7082222">PMC7082222</a></p>
+</div>
+</div>
+<h2 id="supplementary-material">Supplementary Material</h2>
+<h3 id="additional-case-study-1-rna-seq-differential-gene-expression">Additional case study 1: RNA-seq differential gene expression</h3>
+<p>Differential gene expression (DGE) analysis is a routine research tool in the field of functional genomics. Its main goal is to determine quantitative changes in gene expression levels between different experimental conditions or different populations. Nowadays, given the availability of NGS technologies, most DGE analysis are based on RNA-seq data, being the primary application of the technology <span class="citation" data-cites="1DX19gjFK">[<a href="#ref-1DX19gjFK" role="doc-biblioref">104</a>]</span>. Here, we will consider a study designed to gain insights regarding a specific condition of interest, leading to interest genes that can be functionally characterized in animal models afterwards. The experimental setup included a control group and an experimental group with the condition of interest, both sequenced using RNA-seq. The experiment was conducted four times independently to reach a total of four replicates per group.</p>
+<p>In this example, the most relevant part is personal research. Following this work’s framework, the first step is to decide which programming languages to use. Considering that the bioinformatics analysis will include a first step performed in the command line—where read will be trimmed and aligned to a reference transcriptome, and the number of reads per transcripts will be counted—followed by a second step for data filtering and statistical analysis, the programming languages to use will be Shell and R. The folder structure must have separated spaces for raw data, results, documentation and scripts used in the analysis. We recommend to clone the RR-init template into our HPC since a simple structure will suffice. For this project, the best option will be to use a Conda environment with R installed, where we can download packages from Bioconductor and Bioconda. A bash script written in VIM or Emacs will be a suitable option for the first step in the HPC, and R Studio for the second part of analysis and visualization. We advice to follow literature programming, especially when writing R code, and to track changes using Git.</p>
+<h3 id="additional-case-study-2-genome-scale-metabolic-model">Additional case study 2: Genome-scale metabolic model</h3>
+<p>A sub group of constraint-based models (case study 3) are genome-scale metabolic models, where the model represents the complete metabolism of a cell, inferred from genome sequencing. These models are significantly larger in size, making the model generation and curation steps hard to trace back if we don’t use adequate tools. As a reference paper, consider the generation, curation and validation of a genome-scale model for <em>Parageobacillus thermoglucosidasius</em> <span class="citation" data-cites="31ZBzbN6">[<a href="#ref-31ZBzbN6" role="doc-biblioref">105</a>]</span>, a thermophilic facultative anaerobic bacteria with promising traits for industrial metabolic engineering.</p>
+<p>The first step in a project of this nature is to use one of the many reconstruction algorithms available <span class="citation" data-cites="1GXDCoupc">[<a href="#ref-1GXDCoupc" role="doc-biblioref">106</a>]</span> to start from what is referred to as a draft reconstruction; therefore, the choice of programming language for that section will depend on the selected algorithm. After that, there is a lengthy step of model curation and gap filling, in order to end up with a model that can produce all necessary building blocks of the cell. For this step we recommend a basic setup of Python as programming language and Conda as environment manager, due to their ease of use and the growing number of Python packages being developed in the field. Additionally, we advice using Jupyter Notebook as main working setup and Git for version control, as you can use different notebooks (or different versions of a notebook) as logs of analysis performed on your working draft. When collaborating, tools that will be especially useful while working on a genome-scale model are unit-testing, to ensure your model maintains a certain quality as you and others develop it <span class="citation" data-cites="14iHcKBb7">[<a href="#ref-14iHcKBb7" role="doc-biblioref">107</a>]</span>, and ReviewNB, to keep track of changes in notebooks across commits and/or branches. Finally, when sharing the model in the community, Zenodo is a great option for defining different versions of the model, and any issue tracker will make it possible for users to pinpoint mathematical or biological inconsistencies in the network.</p>
 <!-- default theme -->
 
 <style>
