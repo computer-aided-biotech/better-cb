@@ -6,18 +6,19 @@ keywords:
   - manubot
 lang: en-US
 authors:
+  - github: dcsoto
+    name: Daniela C. Soto *
+    initials: DC
+    orcid: 0000-0002-6292-655X
+    twitter: dcsoto_cl
+    email: dcsoto@ucdavis.edu
+    affiliations:
+      - Genome Center, MIND Institute, and Department of Biochemistry & Molecular Medicine, Davis, CA 95616,USA
   - github: BenjaSanchez
-    name: Benjamín J. Sánchez
+    name: Benjamín J. Sánchez *
     initials: BS
     orcid: 0000-0001-6093-4110
     twitter: BenjaSanchez
     email: bjsanchezb@gmail.com
     affiliations:
       - Department of Bioengineering, Technical University of Denmark, Kgs. Lyngby, 2800, Denmark
-  - github: dcsoto
-    name: Daniela C. Soto
-    initials: DC
-    orcid: 0000-0002-6292-655X
-    email: dcsoto@ucdavis.edu
-    affiliations:
-      - Genome Center, MIND Institute, and Department of Biochemistry & Molecular Medicine, Davis, CA 95616,USA
