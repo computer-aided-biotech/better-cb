@@ -6,6 +6,7 @@ BiocManager
 Bioconda
 Bioconductor
 Bioengineering
+bioinformaticiancs
 bioinformatics
 Bitbucket
 Bookdown
@@ -13,7 +14,7 @@ citable
 CLI
 cobrapy
 codebase
-codecov
+Codecov
 CoLab
 CoLaboratory
 Conda
@@ -26,8 +27,10 @@ dataset
 datasets
 Dayhoff
 dcsoto
+defnition
 DGE
 docstrings
+DSL
 DVC
 DWL
 ENA
@@ -38,10 +41,11 @@ figshare
 filesystem
 Findability
 Findable
-Genomic
+formatsPython
+genomic
 genotyping
 Gitbook
-Gitflow
+GitFlow
 GitKraken
 GitLab
 Gitter
@@ -91,7 +95,7 @@ reproducibility
 resequencing
 reStructuredText
 reticulate
-reusability
+Reusability
 ReviewNB
 roadmap
 RStudio

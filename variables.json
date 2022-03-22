@@ -7,12 +7,12 @@
       "manubot"
     ],
     "lang": "en-US",
-    "date-meta": "2021-09-29",
+    "date-meta": "2022-03-22",
     "author-meta": [
       "Daniela C. Soto *",
       "Benjamín J. Sánchez *"
     ],
-    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Tools for (better) computational biology\" />\n<meta name=\"citation_title\" content=\"Tools for (better) computational biology\" />\n<meta property=\"og:title\" content=\"Tools for (better) computational biology\" />\n<meta property=\"twitter:title\" content=\"Tools for (better) computational biology\" />\n<meta name=\"dc.date\" content=\"2021-09-29\" />\n<meta name=\"citation_publication_date\" content=\"2021-09-29\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Daniela C. Soto *\" />\n<meta name=\"citation_author_institution\" content=\"Genome Center, MIND Institute, and Department of Biochemistry &amp; Molecular Medicine, Davis, CA 95616,USA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-6292-655X\" />\n<meta name=\"twitter:creator\" content=\"@dcsoto_cl\" />\n<meta name=\"citation_author\" content=\"Benjamín J. Sánchez *\" />\n<meta name=\"citation_author_institution\" content=\"Department of Bioengineering, Technical University of Denmark, Kgs. Lyngby, 2800, Denmark\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-6093-4110\" />\n<meta name=\"twitter:creator\" content=\"@BenjaSanchez\" />\n<link rel=\"canonical\" href=\"https://computer-aided-biotech.github.io/better-cb/\" />\n<meta property=\"og:url\" content=\"https://computer-aided-biotech.github.io/better-cb/\" />\n<meta property=\"twitter:url\" content=\"https://computer-aided-biotech.github.io/better-cb/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://computer-aided-biotech.github.io/better-cb/\" />\n<meta name=\"citation_pdf_url\" content=\"https://computer-aided-biotech.github.io/better-cb/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://computer-aided-biotech.github.io/better-cb/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://computer-aided-biotech.github.io/better-cb/v/4048a8723750f15071c7d088831a0e4737dc56b8/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://computer-aided-biotech.github.io/better-cb/v/4048a8723750f15071c7d088831a0e4737dc56b8/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://computer-aided-biotech.github.io/better-cb/v/4048a8723750f15071c7d088831a0e4737dc56b8/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Tools for (better) computational biology\" />\n<meta name=\"citation_title\" content=\"Tools for (better) computational biology\" />\n<meta property=\"og:title\" content=\"Tools for (better) computational biology\" />\n<meta property=\"twitter:title\" content=\"Tools for (better) computational biology\" />\n<meta name=\"dc.date\" content=\"2022-03-22\" />\n<meta name=\"citation_publication_date\" content=\"2022-03-22\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Daniela C. Soto *\" />\n<meta name=\"citation_author_institution\" content=\"Genome Center, MIND Institute, and Department of Biochemistry &amp; Molecular Medicine, Davis, CA 95616,USA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-6292-655X\" />\n<meta name=\"twitter:creator\" content=\"@dcsoto_cl\" />\n<meta name=\"citation_author\" content=\"Benjamín J. Sánchez *\" />\n<meta name=\"citation_author_institution\" content=\"Department of Bioengineering, Technical University of Denmark, Kgs. Lyngby, 2800, Denmark\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-6093-4110\" />\n<meta name=\"twitter:creator\" content=\"@BenjaSanchez\" />\n<link rel=\"canonical\" href=\"https://computer-aided-biotech.github.io/better-cb/\" />\n<meta property=\"og:url\" content=\"https://computer-aided-biotech.github.io/better-cb/\" />\n<meta property=\"twitter:url\" content=\"https://computer-aided-biotech.github.io/better-cb/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://computer-aided-biotech.github.io/better-cb/\" />\n<meta name=\"citation_pdf_url\" content=\"https://computer-aided-biotech.github.io/better-cb/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://computer-aided-biotech.github.io/better-cb/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://computer-aided-biotech.github.io/better-cb/v/1e589737f89327aaf173ea0dda721d648b1fe288/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://computer-aided-biotech.github.io/better-cb/v/1e589737f89327aaf173ea0dda721d648b1fe288/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://computer-aided-biotech.github.io/better-cb/v/1e589737f89327aaf173ea0dda721d648b1fe288/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
     "bibliography": [
       "content/manual-references.json"
     ],
@@ -22,7 +22,7 @@
     "manubot-clear-requests-cache": false
   },
   "manubot": {
-    "date": "September 29, 2021",
+    "date": "March 22, 2022",
     "authors": [
       {
         "github": "dcsoto",
@@ -68,19 +68,19 @@
       "repo_slug": "computer-aided-biotech/better-cb",
       "repo_owner": "computer-aided-biotech",
       "repo_name": "better-cb",
-      "commit": "4048a8723750f15071c7d088831a0e4737dc56b8",
-      "triggering_commit": "4048a8723750f15071c7d088831a0e4737dc56b8",
-      "build_url": "https://github.com/computer-aided-biotech/better-cb/commit/4048a8723750f15071c7d088831a0e4737dc56b8/checks",
+      "commit": "1e589737f89327aaf173ea0dda721d648b1fe288",
+      "triggering_commit": "1e589737f89327aaf173ea0dda721d648b1fe288",
+      "build_url": "https://github.com/computer-aided-biotech/better-cb/commit/1e589737f89327aaf173ea0dda721d648b1fe288/checks",
       "job_url": "https://github.com/computer-aided-biotech/better-cb/runs/__run_3"
     },
     "html_url": "https://computer-aided-biotech.github.io/better-cb/",
     "pdf_url": "https://computer-aided-biotech.github.io/better-cb/manuscript.pdf",
-    "html_url_versioned": "https://computer-aided-biotech.github.io/better-cb/v/4048a8723750f15071c7d088831a0e4737dc56b8/",
-    "pdf_url_versioned": "https://computer-aided-biotech.github.io/better-cb/v/4048a8723750f15071c7d088831a0e4737dc56b8/manuscript.pdf",
+    "html_url_versioned": "https://computer-aided-biotech.github.io/better-cb/v/1e589737f89327aaf173ea0dda721d648b1fe288/",
+    "pdf_url_versioned": "https://computer-aided-biotech.github.io/better-cb/v/1e589737f89327aaf173ea0dda721d648b1fe288/manuscript.pdf",
     "manubot_version": "0.4.1",
     "rootstock_commit": "97b294802ffcd39071b6e5b8ab59f60faf4be118",
     "manuscript_stats": {
-      "word_count": 13827
+      "word_count": 13906
     }
   }
 }
